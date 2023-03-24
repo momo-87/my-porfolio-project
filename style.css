@@ -28,7 +28,7 @@
     margin-left: 3.2%;
   }
 
-  .logo-container h2 {
+  .logo-container h2 a {
     width: 76%;
     height: 20px;
     margin-top: 10px;
@@ -70,33 +70,38 @@
   }
 
   .welcome_text {
-    height: 211px;
+    height: auto;
     margin-top: 56px;
     font-weight: 700;
   }
 
-  .welcome_text h2 {
+  .welcome_text h1 {
     font-size: 40px;
     line-height: 52px;
   }
 
-  .welcome_text h2 span {
+  .welcome_text h1 span {
     color: #36b37e;
   }
 
   .introduction_text {
-    height: 164px;
+    height: auto;
     font-size: 20px;
     line-height: 28px;
     text-align: center;
+    margin-top: 15px;
   }
 
   .social_media_icons {
-    display: flex;
-    justify-content: space-around;
     width: 45.4%;
     margin-top: 22.89px;
     margin-left: 28%;
+  }
+
+  .social_media_icons ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
   }
 }
 
