@@ -128,8 +128,8 @@
 
   /* Headline section end */
   .recent_works {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto;
   }
 
   .primary-text,
