@@ -360,16 +360,18 @@
     text-align: center;
   }
 
-  .about_form {
+  .about_form ul {
     display: flex;
     flex-direction: column;
     width: 87.2%;
     margin-top: 58px;
     margin-left: 6.4%;
     row-gap: 24px;
+    list-style: none;
   }
 
   .about_form input {
+    width: 100%;
     height: 48px;
     border: 1px solid #d0d9d4;
     border-radius: 4px;
@@ -384,6 +386,7 @@
   }
 
   .about_form textarea {
+    width: 100%;
     height: 114px;
     font-size: 15px;
     font-weight: 400;
@@ -395,10 +398,10 @@
     border-radius: 4px;
   }
 
-  .about_bottom button {
+  .about_bottom ul li button {
     width: 34.4%;
     border: none;
-    margin: auto;
+    margin-left: 32.8%;
   }
 
   .about_bottom .get_in_touch a {
