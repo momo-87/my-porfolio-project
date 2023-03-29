@@ -399,24 +399,25 @@
   }
 
   .about_bottom ul li button {
-    width: 34.4%;
+    width: 39.4%;
     border: none;
-    margin-left: 32.8%;
-  }
-
-  .about_bottom .get_in_touch a {
-    display: inline-block;
-    width: 100%;
+    margin-left: 30.27%;
     height: 48px;
     background-color: #36b37f;
     border-radius: 4px;
-    text-decoration: none;
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
     text-align: center;
-    padding-top: 12px;
     color: #fff;
+  }
+
+  .about_bottom ul li button:hover {
+    background-color: #36b37f;
+  }
+
+  .about_bottom ul li button:active {
+    background-color: #008552;
   }
 
   .about_bottom .my_email {
