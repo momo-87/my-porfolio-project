@@ -18,6 +18,7 @@
         </nav>
     </header>
     <main>
+        <!-- Headline section start -->
         <section class="headline">
             <div class="welcome_text">
                 <h1>Hey There.<br> I'm Christian.<br><span>I’m a software developer</h1></span>  
@@ -39,6 +40,7 @@
             </div>
         </section>
         <!--Headline section end-->
+        <!-- Recent Works section start -->
         <section class="recent_works">
             <h2 class="recent_work_primary_text">My Recent<br> Works</h2>
             <div class="indicator"></div>
@@ -122,6 +124,7 @@
             </div>
         </section>
         <!--Recent works section end-->
+        <!-- About me section start -->
         <section class="about_me">
             <div class="about_me_text">
                 <h2 class="about_primary_text">About me</h2>
@@ -166,11 +169,21 @@
             </div>
             <div class="about_bottom">
                 <div class="text_box">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</div>
-                <form action="" class="about_form">
-                    <input type="text" placeholder="Full name">
-                    <input type="text" placeholder="Email address">
-                    <textarea name="" id="" cols="30" rows="10">Hey I’d like to connect to...</textarea>
-                    <button class="get_in_touch"><a href="#">Get in touch</a></button>
+                <form action="https://formspree.io/f/xeqwroeb" class="about_form" method="post">
+                    <ul>
+                        <li>
+                            <input type="text" name="user_name" id="name" placeholder="Full name" maxlength="30" required>
+                        </li>
+                        <li>
+                            <input type="email" name="email" id="email" placeholder="Email address" required>
+                        </li>
+                        <li>
+                            <textarea name="textarea" id="textarea" maxlength="500" required>Hey I’d like to connect to...</textarea>
+                        </li>
+                        <li>
+                            <button type="submit" class="get_in_touch">Get in touch</button>
+                        </li>
+                    </ul>
                 </form>
                 <div class="my_email">momochristian87@gmail.com</div>
                 <div class="social_media_icons">
@@ -185,6 +198,7 @@
                 <div class="end_bar"></div>
             </div>
         </section>
+        <!-- About me section end -->
     </main>
 </body>
 </html>
