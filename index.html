@@ -9,40 +9,50 @@
     <title>Porfolio</title>
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <h2><a href="#">My Logo</a></h2>
-        </div>
-        <nav class="open_mobile_menu_icon">
-            <img src="./Icons/Menu.svg" alt="">
-        </nav>
-    </header>
-    <main>
-        <!-- Headline section start -->
-        <section class="headline">
-            <div class="welcome_text">
-                <h1>Hey There.<br> I'm Christian.<br><span>I’m a software developer</h1></span>  
+    <div class ="header_headline_container">
+        <header>
+            <div class="logo-container">
+                <h2><a href="#">My Logo</a></h2>
             </div>
-            <div class="introduction_text">
-                <p class="">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
-            </div>
-            <div class="social_media_icons">
-                <ul>
-                    <li><a href="https://twitter.com/Momo_yde"><img src="Icons/twitter.svg" alt=""></a></li>
-                    <li><a href="https://www.linkedin.com/in/christian-momo/"><img src="Icons/Linkedin.svg" alt=""></a></li>
-                    <li><a href=""><img src="Icons/medium.svg" alt=""></a></li>
-                    <li><a href="https://github.com/Momo-87"><img src="Icons/github.svg" alt=""></a></li>
-                    <li><a href=""><img src="Icons/angellist.svg" alt=""></a></li>
+            <nav>
+                <div class="open_mobile_menu_icon">
+                   <img src="./Icons/Menu.svg" alt=""> 
+                </div>
+                <ul class="nav_menu">
+                    <li><a href="#">Porfolio</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
-            </div>
-            <div class="action">
-                <a href="#" class="icon"><img src="./Icons/Down.svg" alt=""></a>
-            </div>
-        </section>
+            </nav>
+        </header>
+        <main>
+            <!-- Headline section start -->
+            <section class="headline">
+                <div class="welcome_text">
+                    <h1 class="mobile_version">Hey There.<br> I'm Christian.<br><span>I’m a software developer</h1></span> <!-- For mobile version -->
+                    <h1 class="desktop_version">Hey There.I'm Christian.<br><span>I’m a software developer</h1></span>  <!-- For desktop version version -->
+                </div>
+                <div class="introduction_text">
+                    <p class="">I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded,<br> don’t hesitate to contact me.</p>
+                </div>
+                <div class="social_media_icons">
+                    <ul>
+                        <li><a href="https://twitter.com/Momo_yde"><img src="Icons/twitter.svg" alt=""></a></li>
+                        <li><a href="https://www.linkedin.com/in/christian-momo/"><img src="Icons/Linkedin.svg" alt=""></a></li>
+                        <li><a href=""><img src="Icons/medium.svg" alt=""></a></li>
+                        <li><a href="https://github.com/Momo-87"><img src="Icons/github.svg" alt=""></a></li>
+                        <li><a href=""><img src="Icons/angellist.svg" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="action">
+                    <a href="#" class="icon"><img src="./Icons/Down.svg" alt=""></a>
+                </div>
+            </section>
+        </div>
         <!--Headline section end-->
         <!-- Recent Works section start -->
         <section class="recent_works">
-            <h2 class="recent_work_primary_text">My Recent<br> Works</h2>
+            <h2 class="recent_work_primary_text">My Recent<span id="break_point">Works</span> </h2>
             <div class="indicator"></div>
             <div class="card_works">
                 <div class="card">
@@ -120,7 +130,21 @@
                         <div class="see_project_button"><a href="#">See project</a></div>
                     </div>
                 </div>
-
+                <div class="card">
+                    <div class="image_box">
+                        <img src="./images/card1.jpg" alt="">
+                    </div>
+                    <div class="text_box">
+                        <div class="project_title"><h2>Multi-Post Stories Gain+Glory</h2></div>
+                        <ul class="tags">
+                            <li><a href="#">Ruby on Rails</a></li>
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                            <li><a href="#">HTML</a></li>
+                        </ul>
+                        <div class="see_project_button"><a href="#">See project</a></div>
+                    </div>
+                </div>
             </div>
         </section>
         <!--Recent works section end-->
@@ -128,7 +152,7 @@
         <section class="about_me">
             <div class="about_me_text">
                 <h2 class="about_primary_text">About me</h2>
-                <div class="about_supporting-text">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</div>
+                <div class="about_supporting-text">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,<br> don’t hesitate to contact me.</div>
                 <div class="resume_button"><a href="">Get my resume</a></div>
             </div>
             <div class="about_cards">
@@ -200,5 +224,17 @@
         </section>
         <!-- About me section end -->
     </main>
+    <footer>
+        <div class="desktop_end_bar"></div>
+        <div class="desktop_social_media_icons">
+            <ul>
+                <li><a href="https://twitter.com/Momo_yde"><img src="Icons/twitter.svg" alt=""></a></li>
+                <li><a href="https://www.linkedin.com/in/christian-momo/"><img src="Icons/Linkedin.svg" alt=""></a></li>
+                <li><a href=""><img src="Icons/medium.svg" alt=""></a></li>
+                <li><a href="https://github.com/Momo-87"><img src="Icons/github.svg" alt=""></a></li>
+                <li><a href=""><img src="Icons/angellist.svg" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
