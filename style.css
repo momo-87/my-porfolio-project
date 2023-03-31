@@ -251,11 +251,6 @@ body {
     width: 100%;
   }
 
-  .text_box .see_project_button a:hover {
-    box-shadow: 0 10px 16px 10px rgba(54, 179, 127, 0.5);
-    border-radius: 5px;
-  }
-
   .text_box .see_project_button a {
     display: inline-block;
     width: 40%;
@@ -269,6 +264,11 @@ body {
     text-align: center;
     padding-top: 10px;
     color: #fff;
+  }
+
+  .text_box .see_project_button a:hover {
+    box-shadow: 0 10px 16px 10px rgba(54, 179, 127, 0.5);
+    border-radius: 5px;
   }
 
   /* Mobile version Recent works section end */
@@ -308,7 +308,7 @@ body {
     margin-top: 24px;
   }
 
-  .about_me_text .resume_button a {
+  .about_me .about_me_text .resume_button a {
     display: inline-block;
     width: 43.6%;
     height: 48px;
@@ -356,7 +356,7 @@ body {
     background-color: #fff;
   }
 
-  .card_list .card_list_icon img {
+  .about_card_list .card_list .card_list_icon img {
     margin: auto;
   }
 
@@ -461,8 +461,8 @@ body {
   }
 
   .about_bottom ul li button:hover {
-    background-color: #36b37f;
-    box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+    box-shadow: 0 10px 16px 10px rgba(54, 179, 127, 0.5);
+    border-radius: 5px;
   }
 
   .about_bottom ul li button:active {
@@ -622,7 +622,7 @@ body {
     justify-content: center;
   }
 
-  .text_box .see_project_button a {
+  .card .text_box .see_project_button a {
     display: flex;
     width: 122px;
     margin: 13px auto 24px auto;
@@ -644,7 +644,7 @@ body {
     margin: 64px auto 0 auto;
   }
 
-  .about_me_text .resume_button a {
+  .about_me .about_me_text .resume_button a {
     width: 153px;
     margin-left: 0;
   }
@@ -687,12 +687,9 @@ body {
     margin-left: 0;
     align-items: center;
     text-align: justify;
+    animation: abtext 3s;
   }
 
-  .about_bottom .text_box {
-    animation: abtext 3s;
-  } 
-  
   @keyframes abtext {
     from {
       margin-left: 100%;
@@ -704,11 +701,6 @@ body {
       width: 100%;
     }
   }
-
-  .about_bottom .text_box {
-    animation: abtext 3s;
-  } 
-  
 
   .about_form {
     width: 100%;
