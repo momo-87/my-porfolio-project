@@ -246,6 +246,11 @@ body {
     width: 100%;
   }
 
+  .text_box .see_project_button a:hover {
+    box-shadow: 0 10px 16px 10px rgba(54, 179, 127, 0.5);
+    border-radius: 5px;
+  }
+
   .text_box .see_project_button a {
     display: inline-block;
     width: 40%;
@@ -516,6 +521,12 @@ body {
     color: #344563;
   }
 
+  .nav_menu li a:hover {
+    box-shadow: 0 10px 16px 10px rgba(54, 179, 127, 0.5);
+    border-radius: 5px;
+    font-size: 20px;
+  }
+
   .open_mobile_menu_icon {
     display: none;
   }
@@ -655,6 +666,7 @@ body {
     grid-template-columns: 49% 49%;
     column-gap: 2%;
     margin-top: 17.5px;
+    /* overflow: hidden; */
   }
 
   .about_bottom .text_box {
@@ -666,6 +678,11 @@ body {
     align-items: center;
     text-align: justify;
   }
+
+  .about_bottom .text_box {
+    animation: abtext 3s;
+  } 
+  
 
   .about_form {
     width: 100%;
