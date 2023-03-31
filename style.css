@@ -199,11 +199,16 @@ body {
     flex-direction: column;
     border: 1px solid #d0d9d4;
     border-radius: 8px;
+    overflow: hidden;
   }
 
   .card .image_box img {
     width: 100%;
     height: 100%;
+  }
+
+  .card .image_box img:hover {
+    transform: scale(105%);
   }
 
   .card .text_box {
@@ -261,6 +266,11 @@ body {
     color: #fff;
   }
 
+  .text_box .see_project_button a:hover {
+    box-shadow: 0 10px 16px 10px rgba(54, 179, 127, 0.5);
+    border-radius: 5px;
+  }
+
   /* Mobile version Recent works section end */
 
   /* Mobile version About me section start */
@@ -298,7 +308,7 @@ body {
     margin-top: 24px;
   }
 
-  .about_me_text .resume_button a {
+  .about_me .about_me_text .resume_button a {
     display: inline-block;
     width: 43.6%;
     height: 48px;
@@ -313,6 +323,11 @@ body {
     text-align: center;
     padding-top: 10px;
     color: #fff;
+  }
+
+  .about_me_text .resume_button a:hover {
+    box-shadow: 0 10px 16px 10px rgba(54, 179, 127, 0.5);
+    border-radius: 5px;
   }
 
   .about_card_list {
@@ -341,7 +356,7 @@ body {
     background-color: #fff;
   }
 
-  .card_list .card_list_icon img {
+  .about_card_list .card_list .card_list_icon img {
     margin: auto;
   }
 
@@ -446,8 +461,8 @@ body {
   }
 
   .about_bottom ul li button:hover {
-    background-color: #36b37f;
-    box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+    box-shadow: 0 10px 16px 10px rgba(54, 179, 127, 0.5);
+    border-radius: 5px;
   }
 
   .about_bottom ul li button:active {
@@ -514,6 +529,12 @@ body {
     font-size: 15px;
     line-height: 20px;
     color: #344563;
+  }
+
+  .nav_menu li a:hover {
+    color: rgb(54, 179, 126);
+    border-bottom: 2px solid rgb(54, 179, 126);
+    padding-bottom: 10px;
   }
 
   .open_mobile_menu_icon {
@@ -601,7 +622,7 @@ body {
     justify-content: center;
   }
 
-  .text_box .see_project_button a {
+  .card .text_box .see_project_button a {
     display: flex;
     width: 122px;
     margin: 13px auto 24px auto;
@@ -623,7 +644,7 @@ body {
     margin: 64px auto 0 auto;
   }
 
-  .about_me_text .resume_button a {
+  .about_me .about_me_text .resume_button a {
     width: 153px;
     margin-left: 0;
   }
@@ -655,6 +676,7 @@ body {
     grid-template-columns: 49% 49%;
     column-gap: 2%;
     margin-top: 17.5px;
+    overflow: hidden;
   }
 
   .about_bottom .text_box {
@@ -665,6 +687,19 @@ body {
     margin-left: 0;
     align-items: center;
     text-align: justify;
+    animation: abtext 3s;
+  }
+
+  @keyframes abtext {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0;
+      width: 100%;
+    }
   }
 
   .about_form {
