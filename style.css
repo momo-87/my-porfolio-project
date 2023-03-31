@@ -320,6 +320,11 @@ body {
     color: #fff;
   }
 
+  .about_me_text .resume_button a:hover {
+    box-shadow: 0 10px 16px 10px rgba(54, 179, 127, 0.5);
+    border-radius: 5px;
+  }
+
   .about_card_list {
     display: flex;
     flex-direction: column;
