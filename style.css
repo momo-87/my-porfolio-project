@@ -68,9 +68,8 @@ body {
 
   /* Mobile Version Headline section start */
   .headline {
-    background-image: url('./images/mobile-background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url('./images/Frame1.png') right 3% no-repeat, url('./images/Frame2.png') right 44% no-repeat, url('./images/Frame3.png') right 100% no-repeat, url('./images/Frame4.png') 4% 23% no-repeat, url('./images/Frame5.png') left 82% no-repeat, url('./images/Frame6.png') 50% 0 no-repeat;
+    background-size: 83px 106px, 41px 177px, 59px 59px, 35px 33px, 54px 94px, 381px 569px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -277,9 +276,8 @@ body {
   .about_me {
     display: flex;
     flex-direction: column;
-    background-image: url('./images/about-background.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
+    background: url('./images/illustration\ 2-about\ me\ mobile.jpg') left 14.5% no-repeat, url('./images/illustration\ 1-\ about\ me-mobile.jpg') right 0.5% no-repeat, url('./images/illustration-contact-form.jpg') right 97% no-repeat;
+    background-size: 71px 58px, 68px 110px, 63px 146px;
   }
 
   .about_me_text {
