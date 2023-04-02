@@ -68,8 +68,8 @@ body {
 
   /* Mobile Version Headline section start */
   .headline {
-    background: url('./images/Frame1.png') right 3% no-repeat, url('./images/Frame2.png') right 44% no-repeat, url('./images/Frame3.png') right 100% no-repeat, url('./images/Frame4.png') 4% 23% no-repeat, url('./images/Frame5.png') left 82% no-repeat, url('./images/Frame6.png') 50% 0 no-repeat;
-    background-size: 83px 106px, 41px 177px, 59px 59px, 35px 33px, 54px 94px, 381px 569px;
+    background: url('./images/Frame1.png') right 3% no-repeat, url('./images/Frame2.png') right 44% no-repeat, url('./images/Frame3.png') right 100% no-repeat, url('./images/Frame4.png') 4% 23% no-repeat, url('./images/Frame5.png') left 82% no-repeat, url('./images/Frame6.png') 50% 0 no-repeat, url('./images/Frame7.png') 41% 76% no-repeat;
+    background-size: 83px 106px, 41px 177px, 59px 59px, 35px 33px, 54px 94px, 381px 569px, 25px 27px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -491,9 +491,7 @@ body {
   .header_headline_container {
     display: flex;
     flex-direction: column;
-    background-image: url('./images/Header-llustration-desktop.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url('./images/Header-llustration-desktop.png') 50% top no-repeat;
   }
 
   header {
