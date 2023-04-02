@@ -338,7 +338,6 @@ body {
   .card_list {
     display: block;
     width: 87.2%;
-    height: 316px;
     margin-left: 6.4%;
     background-color: #ebf0ee;
     border-radius: 8px;
@@ -375,9 +374,9 @@ body {
     row-gap: 8px;
     column-gap: 8px;
     width: 85%;
-    height: 40px;
     margin-left: 7.3%;
     margin-top: 24px;
+    padding-bottom: 24px;
   }
 
   .about_card_tags li {
@@ -654,6 +653,7 @@ body {
   .about_card_list {
     display: grid;
     grid-template-columns: 31.66% 31.66% 31.66%;
+    grid-template-rows: auto auto auto;
     width: 99%;
     margin-left: 0.5%;
     column-gap: 2%;
