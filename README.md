@@ -30,7 +30,10 @@
 
 # 📖 My Porfolio Project <a name="porfolio-project"></a>
 
-> This is my first microverse project. I created using HTML and CSS.
+> This is my portfolio project. I created using HTML and CSS.
+> Below is the link to the live version:
+  https://momo-87.github.io/
+
 
 ## 🛠 Built With <a name="built-with"></a>
 1- HTML.
@@ -58,7 +61,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Coming Soon
+> https://momo-87.github.io/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -81,7 +84,7 @@ Run this command:
 
 ```sh
   cd my-folder
-  git clone https://github.com/Momo-87/my-porfolio-project.git
+  git clone https://github.com/momo-87/my-porfolio-project.git
 ```
 
 ### Install
