@@ -47,6 +47,7 @@
   <ul>
     <li><a href="https://html.com/">HTML</a></li>
     <li><a href="http://www.css.com/">CSS</a></li>
+    <li><a href="https://www.loom.com/share/2ce37a7925314ac8a15d9b0606ca86e3">Loom video</a></li>
   </ul>
 </details>
 
