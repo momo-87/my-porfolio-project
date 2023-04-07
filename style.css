@@ -31,6 +31,8 @@ body {
   }
 
   .logo-container {
+    display: flex;
+    gap: 0px;
     width: 26.7%;
     height: 40px;
     margin-top: 4px;
@@ -41,7 +43,7 @@ body {
     width: 76%;
     height: 20px;
     margin-top: 10px;
-    margin-left: 12%;
+    /* margin-left: 12%; */
     color: #172b4d;
     font-size: 18px;
     line-height: 20px;
@@ -283,7 +285,7 @@ body {
     background: url('./images/illustration\ 2-about\ me\ mobile.jpg') left 14.5% no-repeat, url('./images/illustration\ 1-\ about\ me-mobile.jpg') right 0.5% no-repeat, url('./images/illustration-contact-form.jpg') right 97% no-repeat;
     background-size: 71px 58px, 68px 110px, 63px 146px;
   }
-
+  
   .about_me_text {
     display: flex;
     flex-direction: column;
