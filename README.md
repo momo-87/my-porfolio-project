@@ -39,6 +39,7 @@
 1- HTML.
 2- CSS.
 3- LINTERS.
+4- Loom video: https://www.loom.com/share/2ce37a7925314ac8a15d9b0606ca86e3
 
 ### Tech Stack <a name="tech-stack"></a>
 
