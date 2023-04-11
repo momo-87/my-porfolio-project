@@ -8,26 +8,27 @@
     <link rel="stylesheet" href="./style.css">
     <title>Software Developer Portfolio Christian Momo</title>
 </head>
-<body>
-    <div class ="header_headline_container">
-        <header>
+<body class="flex-column">
+    <div class ="header_headline_container flex-column">
+        <header class="flex-row">
             <div class="logo-container">
                 <h1><a href="#">My Logo</a></h1>
             </div>
             <nav>
-                <div class="open_mobile_menu_icon">
-                   <img src="./Icons/Menu.svg" alt="mobile version open menu"> 
+                <div id="openCloseMobileMenuButton" class="openCloseMobileMenuButton">
+                   <img src="./Icons/Menu.svg" alt="mobile version open menu" id="openMobileMenu">
+                   <img src="./Icons/closeMobileMenu.svg" alt="mobile version close menu" id="closeMobileMenu">
                 </div>
-                <ul class="nav_menu">
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="navMenu" class="navMenu flex-column">
+                    <li><a href="#cardWorks" class="navMenuLink">Portfolio</a></li>
+                    <li><a href="#aboutMe" class="navMenuLink">About</a></li>
+                    <li><a href="#contactMe" class="navMenuLink">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <!-- Headline section start -->
-            <section class="headline">
+            <section id="headLine" class="headline flex-column">
                 <div class="welcome_text">
                     <h1 class="mobile_version">Hey There.<br> I'm Christian.<br><span>I’m a software developer</h1></span> <!-- For mobile version -->
                     <h1 class="desktop_version">Hey There.I'm Christian.<br><span>I’m a software developer</h1></span>  <!-- For desktop version version -->
@@ -35,8 +36,8 @@
                 <div class="introduction_text">
                     <p class="">I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded,<br> don’t hesitate to contact me.</p>
                 </div>
-                <div class="social_media_icons">
-                    <ul>
+                <div class="social_media_icons flex-row">
+                    <ul class="flex-row">
                         <li><a href="https://twitter.com/Momo_yde"><img src="Icons/twitter.svg" alt="twitter icon"></a></li>
                         <li><a href="https://www.linkedin.com/in/christian-momo/"><img src="Icons/Linkedin.svg" alt="linkedin icon"></a></li>
                         <li><a href=""><img src="Icons/medium.svg" alt="medium icon"></a></li>
@@ -54,12 +55,12 @@
         <section class="recent_works">
             <h2 class="recent_work_primary_text">My Recent<span id="break_point">Works</span> </h2>
             <div class="indicator"></div>
-            <div class="card_works">
-                <div class="card">
+            <div id="cardWorks" class="card_works flex-column">
+                <div class="card flex-column">
                     <div class="image_box">
                         <img src="./images/card1.jpg" alt="first project image">
                     </div>
-                    <div class="text_box">
+                    <div class="text_box flex-column">
                         <div class="project_title"><h2>Multi-Post Stories Gain+Glory</h2></div>
                         <ul class="tags">
                             <li><a href="#">Ruby on Rails</a></li>
@@ -70,11 +71,11 @@
                         <div class="see_project_button button"><a href="#">See project</a></div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card flex-column">
                     <div class="image_box">
                         <img src="./images/card2.jpg" alt="second project image">
                     </div>
-                    <div class="text_box">
+                    <div class="text_box flex-column">
                         <div class="project_title"><h2>Multi-Post Stories Gain+Glory</h2></div>
                         <ul class="tags">
                             <li><a href="#">Ruby on Rails</a></li>
@@ -85,11 +86,11 @@
                         <div class="see_project_button button"><a href="#">See project</a></div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card flex-column">
                     <div class="image_box">
                         <img src="./images/card3.jpg" alt="thirth project image">
                     </div>
-                    <div class="text_box">
+                    <div class="text_box flex-column">
                         <div class="project_title"><h2>Multi-Post Stories Gain+Glory</h2></div>
                         <ul class="tags">
                             <li><a href="#">Ruby on Rails</a></li>
@@ -100,11 +101,11 @@
                         <div class="see_project_button button"><a href="#">See project</a></div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card flex-column">
                     <div class="image_box">
                         <img src="./images/card1.jpg" alt="fourth project image">
                     </div>
-                    <div class="text_box">
+                    <div class="text_box flex-column">
                         <div class="project_title"><h2>Multi-Post Stories Gain+Glory</h2></div>
                         <ul class="tags">
                             <li><a href="#">Ruby on Rails</a></li>
@@ -115,11 +116,11 @@
                         <div class="see_project_button button"><a href="#">See project</a></div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card flex-column">
                     <div class="image_box">
                         <img src="./images/card2.jpg" alt="fifth project image">
                     </div>
-                    <div class="text_box">
+                    <div class="text_box flex-column">
                         <div class="project_title"><h2>Multi-Post Stories Gain+Glory</h2></div>
                         <ul class="tags">
                             <li><a href="#">Ruby on Rails</a></li>
@@ -130,11 +131,11 @@
                         <div class="see_project_button button"><a href="#">See project</a></div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card flex-column flex-column">
                     <div class="image_box">
                         <img src="./images/card1.jpg" alt="sixth project image">
                     </div>
-                    <div class="text_box">
+                    <div class="text_box ">
                         <div class="project_title"><h2>Multi-Post Stories Gain+Glory</h2></div>
                         <ul class="tags">
                             <li><a href="#">Ruby on Rails</a></li>
@@ -149,18 +150,18 @@
         </section>
         <!--Recent works section end-->
         <!-- About me section start -->
-        <section class="about_me">
-            <div class="about_me_text">
+        <section id="aboutMe" class="about_me flex-column">
+            <div class="about_me_text flex-column">
                 <h2 class="about_primary_text">About me</h2>
                 <div class="about_supporting-text">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,<br> don’t hesitate to contact me.</div>
                 <div class="resume_button button"><a href="">Get my resume</a></div>
             </div>
             <div class="about_cards">
-                <ul class="about_card_list">
+                <ul class="about_card_list flex-column">
                     <li class="card_list">
-                        <div class="card_list_icon"><img src="Icons/icon-languages.svg" alt="languages icon"></div>
+                        <div class="card_list_icon flex-row"><img src="Icons/icon-languages.svg" alt="languages icon"></div>
                         <div class="about_card_title">Languages</div>
-                        <ul class="about_card_tags">
+                        <ul class="about_card_tags flex-row">
                             <li>JavaScript</li>
                             <li>Ruby</li>
                             <li>HTML</li>
@@ -168,9 +169,9 @@
                         </ul>
                     </li>
                     <li class="card_list">
-                        <div class="card_list_icon"><img src="Icons/icon-frameworks.svg" alt="frameworks icon"></div>
+                        <div class="card_list_icon flex-row"><img src="Icons/icon-frameworks.svg" alt="frameworks icon"></div>
                         <div class="about_card_title">Frameworks</div>
-                        <ul class="about_card_tags">
+                        <ul class="about_card_tags flex-row">
                             <li>React.js</li>
                             <li>Ruby on Rails</li>
                             <li>RSpec</li>
@@ -179,9 +180,9 @@
                         </ul>
                     </li>
                     <li class="card_list">
-                        <div class="card_list_icon"><img src="Icons/icon-skills.svg" alt="skills icon"></div>
+                        <div class="card_list_icon flex-row"><img src="Icons/icon-skills.svg" alt="skills icon"></div>
                         <div class="about_card_title">Skills</div>
-                        <ul class="about_card_tags">
+                        <ul class="about_card_tags flex-row">
                             <li>Database Management</li>
                             <li>Version Control</li>
                             <li>CLI</li>
@@ -191,10 +192,10 @@
                     </li>
                 </ul>
             </div>
-            <div class="about_bottom">
+            <div id="contactMe" class="about_bottom flex-column">
                 <div class="text_box">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</div>
                 <form action="https://formspree.io/f/xeqwroeb" class="about_form" method="post">
-                    <ul>
+                    <ul class="flex-column">
                         <li>
                             <label for="name">Name</label>
                             <input type="text" name="user_name" id="name" placeholder="Full name" maxlength="30" required>
@@ -213,8 +214,8 @@
                     </ul>
                 </form>
                 <div class="my_email">momochristian87@gmail.com</div>
-                <div class="social_media_icons">
-                    <ul>
+                <div class="social_media_icons flex-row">
+                    <ul class="flex-row">
                         <li><a href="https://twitter.com/Momo_yde"><img src="Icons/twitter.svg" alt="twitter icon"></a></li>
                         <li><a href="https://www.linkedin.com/in/christian-momo/"><img src="Icons/Linkedin.svg" alt="linkedin icon"></a></li>
                         <li><a href=""><img src="Icons/medium.svg" alt="medium icon"></a></li>
@@ -229,8 +230,8 @@
     </main>
     <footer>
         <div class="desktop_end_bar"></div>
-        <div class="desktop_social_media_icons">
-            <ul>
+        <div class="desktop_social_media_icons flex-row">
+            <ul class="flex-row">
                 <li><a href="https://twitter.com/Momo_yde"><img src="Icons/twitter.svg" alt="twitter icon"></a></li>
                 <li><a href="https://www.linkedin.com/in/christian-momo/"><img src="Icons/Linkedin.svg" alt="linkedin icon"></a></li>
                 <li><a href=""><img src="Icons/medium.svg" alt="medium icon"></a></li>
@@ -239,5 +240,6 @@
             </ul>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

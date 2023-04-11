@@ -5,6 +5,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ul {
   list-style: none;
 }
@@ -17,17 +21,29 @@ label {
   display: none;
 }
 
-body {
+.flex-column {
   display: flex;
   flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto 0 auto;
 }
 
 /* Mobile version start */
 @media only screen and (min-width: 375px) {
   header {
-    display: flex;
+    position: fixed;
+    width: 100%;
     height: 48px;
-    margin-top: 44px;
+    margin-top: 0;
+    background: #ffff;
   }
 
   .logo-container {
@@ -49,11 +65,29 @@ body {
     white-space: nowrap;
   }
 
-  .nav_menu {
-    display: none;
+  nav {
+    width: 100%;
   }
 
-  .open_mobile_menu_icon {
+  .navMenu {
+    margin-left: -1000px;
+    transition: 0.3s;
+  }
+
+  #navMenu.mobileMenu {
+    gap: 10px;
+    width: 130.9%;
+    margin-top: -44px !important;
+    padding-top: 150px;
+    padding-left: 7.5%;
+    margin-left: -30.9%;
+    height: 738px;
+    background-color: white;
+    position: relative;
+    z-index: 5;
+  }
+
+  .openCloseMobileMenuButton {
     position: absolute;
     left: 83%;
     margin-top: 4px;
@@ -61,11 +95,31 @@ body {
     width: 10.7%;
   }
 
-  .open_mobile_menu_icon img {
+  .navMenu li a {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: #3a4a42;
+  }
+
+  .openCloseMobileMenuButton img:nth-child(1) {
     width: 60%;
     height: 24px;
     margin-top: 8px;
     margin-left: 20%;
+  }
+
+  #closeMobileMenu {
+    margin-left: -1000px;
+  }
+
+  #closeMobileMenu.closeMobileMenu {
+    width: 40%;
+    height: 18px;
+    position: absolute;
+    z-index: 6;
+    margin-top: 10px;
+    margin-left: -50%;
   }
 
   /* Mobile Version Header end */
@@ -74,11 +128,10 @@ body {
   .headline {
     background: url('./images/Frame1.png') right 3% no-repeat, url('./images/Frame2.png') right 44% no-repeat, url('./images/Frame3.png') right 100% no-repeat, url('./images/Frame4.png') 4% 23% no-repeat, url('./images/Frame5.png') left 82% no-repeat, url('./images/Frame6.png') 50% 0 no-repeat, url('./images/Frame7.png') 41% 76% no-repeat;
     background-size: 83px 106px, 41px 177px, 59px 59px, 35px 33px, 54px 94px, 381px 569px, 25px 27px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     text-align: center;
     color: #172b4d;
+    margin-top: 44px;
   }
 
   .welcome_text,
@@ -116,7 +169,6 @@ body {
 
   .social_media_icons,
   .desktop_social_media_icons {
-    display: flex;
     justify-content: center;
     width: 100%;
     margin-top: 22.89px;
@@ -124,7 +176,6 @@ body {
 
   .social_media_icons ul,
   .desktop_social_media_icons ul {
-    display: flex;
     justify-content: space-around;
     gap: 10px;
   }
@@ -191,15 +242,11 @@ body {
   }
 
   .card_works {
-    display: flex;
-    flex-direction: column;
     row-gap: 24px;
     margin-top: 58px;
   }
 
   .card {
-    display: flex;
-    flex-direction: column;
     border: 1px solid #d0d9d4;
     border-radius: 8px;
     overflow: hidden;
@@ -215,8 +262,6 @@ body {
   }
 
   .card .text_box {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     row-gap: 16px;
   }
@@ -278,15 +323,11 @@ body {
 
   /* Mobile version About me section start */
   .about_me {
-    display: flex;
-    flex-direction: column;
     background: url('./images/illustration\ 2-about\ me\ mobile.jpg') left 14.5% no-repeat, url('./images/illustration\ 1-\ about\ me-mobile.jpg') right 0.5% no-repeat, url('./images/illustration-contact-form.jpg') right 97% no-repeat;
     background-size: 71px 58px, 68px 110px, 63px 146px;
   }
 
   .about_me_text {
-    display: flex;
-    flex-direction: column;
     width: 93.6%;
     margin-left: 3.2%;
     margin-top: 64px;
@@ -333,8 +374,6 @@ body {
   }
 
   .about_card_list {
-    display: flex;
-    flex-direction: column;
     row-gap: 24px;
     margin-top: 35px;
   }
@@ -348,7 +387,6 @@ body {
   }
 
   .card_list_icon {
-    display: flex;
     width: 80px;
     height: 80px;
     margin: auto;
@@ -372,7 +410,6 @@ body {
   }
 
   .about_card_tags {
-    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     row-gap: 8px;
@@ -395,8 +432,6 @@ body {
   }
 
   .about_bottom {
-    display: flex;
-    flex-direction: column;
     margin-top: 54px;
   }
 
@@ -411,8 +446,6 @@ body {
   }
 
   .about_form ul {
-    display: flex;
-    flex-direction: column;
     width: 87.2%;
     margin-top: 58px;
     margin-left: 6.4%;
@@ -492,15 +525,14 @@ body {
 
 @media only screen and (min-width: 768px) {
   .header_headline_container {
-    display: flex;
-    flex-direction: column;
     background: url('./images/Header-llustration-desktop.png') 50% top no-repeat;
   }
 
   header {
-    display: flex;
+    position: static;
     height: 72px;
     margin-top: 0;
+    background: none;
   }
 
   .logo-container {
@@ -513,30 +545,31 @@ body {
     width: 83.13%;
   }
 
-  .nav_menu {
+  .navMenu {
     display: flex;
+    flex-direction: row;
     gap: 20px;
     width: 21.3%;
     height: 40px;
-    margin-top: 16px;
+    margin-top: 16px !important;
     padding-top: 5px;
     margin-left: 30%;
   }
 
-  .nav_menu li a {
+  .navMenu li a {
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
-    color: #344563;
+    color: #3a4a42;
   }
 
-  .nav_menu li a:hover {
+  .navMenu li a:hover {
     color: rgb(54, 179, 126);
     border-bottom: 2px solid rgb(54, 179, 126);
     padding-bottom: 10px;
   }
 
-  .open_mobile_menu_icon {
+  #openCloseMobileMenuButton {
     display: none;
   }
 
@@ -547,7 +580,7 @@ body {
   .headline {
     background-image: none;
     width: 63.88%;
-    margin: 0 auto 151px auto;
+    margin: 0 auto 90px auto;
     row-gap: 24px;
   }
 

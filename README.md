@@ -30,7 +30,7 @@
 
 # 📖 My Porfolio Project <a name="porfolio-project"></a>
 
-> This is my portfolio project. I created using HTML and CSS.
+> This is my portfolio project. I created using HTML, CSS and JavaScript.
 > Below is the link to the live version:
   https://momo-87.github.io/
 
@@ -38,16 +38,18 @@
 ## 🛠 Built With <a name="built-with"></a>
 1- HTML.
 2- CSS.
-3- LINTERS.
-4- Loom video: https://www.loom.com/share/2ce37a7925314ac8a15d9b0606ca86e3
+3- JavaScript
+4- LINTERS.
+5- [Loom video](https://www.loom.com/share/2ce37a7925314ac8a15d9b0606ca86e3).
 
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://html.com/">HTML</a></li>
-    <li><a href="http://www.css.com/">CSS</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+    <li><a href="https://www.javascript.com/">JavaScript</a></li>
     <li><a href="https://www.loom.com/share/2ce37a7925314ac8a15d9b0606ca86e3">Loom video</a></li>
   </ul>
 </details>
@@ -57,6 +59,7 @@
 
 - Added index.html file.
 - Added style.css file.
+- Added script.js file.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
