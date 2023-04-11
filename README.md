@@ -38,8 +38,9 @@
 ## 🛠 Built With <a name="built-with"></a>
 1- HTML.
 2- CSS.
-3- LINTERS.
-4- Loom video: https://www.loom.com/share/2ce37a7925314ac8a15d9b0606ca86e3
+3- JavaScript
+4- LINTERS.
+5- [Loom video](https://www.loom.com/share/2ce37a7925314ac8a15d9b0606ca86e3).
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -48,6 +49,7 @@
   <ul>
     <li><a href="https://html.com/">HTML</a></li>
     <li><a href="http://www.css.com/">CSS</a></li>
+    <li><a href="https://www.javascript.com/">JavaScript</a></li>
     <li><a href="https://www.loom.com/share/2ce37a7925314ac8a15d9b0606ca86e3">Loom video</a></li>
   </ul>
 </details>
