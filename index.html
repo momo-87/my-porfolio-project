@@ -15,19 +15,20 @@
                 <h1><a href="#">My Logo</a></h1>
             </div>
             <nav>
-                <div class="open_mobile_menu_icon">
-                   <img src="./Icons/Menu.svg" alt="mobile version open menu"> 
+                <div id="openCloseMobileMenuButton" class="openCloseMobileMenuButton">
+                   <img src="./Icons/Menu.svg" alt="mobile version open menu" id="openMobileMenu">
+                   <img src="./Icons/closeMobileMenu.svg" alt="mobile version close menu" id="closeMobileMenu">
                 </div>
-                <ul class="nav_menu">
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="navMenu" class="navMenu">
+                    <li><a href="#headLine" class="navMenuLink">Portfolio</a></li>
+                    <li><a href="#aboutMe" class="navMenuLink">About</a></li>
+                    <li><a href="#contactMe" class="navMenuLink">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <!-- Headline section start -->
-            <section class="headline">
+            <section id="headLine" class="headline">
                 <div class="welcome_text">
                     <h1 class="mobile_version">Hey There.<br> I'm Christian.<br><span>I’m a software developer</h1></span> <!-- For mobile version -->
                     <h1 class="desktop_version">Hey There.I'm Christian.<br><span>I’m a software developer</h1></span>  <!-- For desktop version version -->
@@ -149,7 +150,7 @@
         </section>
         <!--Recent works section end-->
         <!-- About me section start -->
-        <section class="about_me">
+        <section id="aboutMe" class="about_me">
             <div class="about_me_text">
                 <h2 class="about_primary_text">About me</h2>
                 <div class="about_supporting-text">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,<br> don’t hesitate to contact me.</div>
@@ -191,7 +192,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="about_bottom">
+            <div id="contactMe" class="about_bottom">
                 <div class="text_box">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</div>
                 <form action="https://formspree.io/f/xeqwroeb" class="about_form" method="post">
                     <ul>
@@ -239,5 +240,6 @@
             </ul>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
