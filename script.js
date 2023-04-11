@@ -1,17 +1,21 @@
     let openMobileMenu = document.querySelector('#openMobileMenu');
     let menuList = document.querySelector('#navMenu')
+    let closeMobileMenu = document.querySelector('#closeMobileMenu');
+    
     openMobileMenu.addEventListener('click', function(){
-        let menuList = document.querySelector('#navMenu');
-        if(window.innerWidth < 768){
-            menuList.classList.toggle('mobileMenu');
-            let closeMobileMenu = document.querySelector('#closeMobileMenu');
-            closeMobileMenu.classList.toggle('closeMobileMenu');
-        }
+            menuList.classList.add('mobileMenu');
+            closeMobileMenu.classList.add('closeMobileMenu');
     })
 
     closeMobileMenu.addEventListener('click', function() {
-        if(window.innerWidth < 768) {
             menuList.classList.remove('mobileMenu');
             closeMobileMenu.classList.remove('closeMobileMenu')
-        }
     });
+
+    let navMenuLink = document.querySelectorAll('.navMenuLink');
+    for(let i = 0; i < navMenuLink.length; i++){
+        navMenuLink[i].addEventListener('click', function(){
+                menuList.classList.remove('mobileMenu');
+                closeMobileMenu.classList.remove('closeMobileMenu');
+        }) 
+    }
