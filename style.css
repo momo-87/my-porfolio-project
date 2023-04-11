@@ -57,6 +57,7 @@ body {
 
   .navMenu {
     margin-left: -1000px;
+    transition: 0.5s;
   }
 
   #navMenu.mobileMenu {
