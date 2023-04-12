@@ -5,7 +5,7 @@ let closeMobileMenu = document.querySelector('#closeMobileMenu');
 openMobileMenu.addEventListener('click', function(){
         menuList.classList.add('mobileMenu');
         closeMobileMenu.classList.add('closeMobileMenu');
-})
+});
 
 closeMobileMenu.addEventListener('click', function() {
         menuList.classList.remove('mobileMenu');
@@ -157,15 +157,3 @@ for(let i = 0; i < projects.length; i++) {
     cardWorks.appendChild(projectCards[i]);
 
 }
-
-
-
-
-
-
-
-let projectButton = document.querySelectorAll('.projectButton');
-
-
-
-
