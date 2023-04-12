@@ -27,7 +27,7 @@ let projects = [
     {
         name: 'Keeping track of hundreds of components',
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and...",
-        image: '../images/card1.jpg',
+        image: './images/card1.jpg',
         technologies: ['Ruby on Rails', 'CSS', 'HTML', 'JavaScript', 'Bootstrap', 'GitHub'],
         liveVersion: 'https://momo-87.github.io/',
         codeSource:'https://github.com/momo-87/momo-87.github.io'
@@ -36,7 +36,7 @@ let projects = [
     {
         name: 'Keeping track of hundreds of components',
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and...",
-        image: '../images/card1.jpg',
+        image: './images/card1.jpg',
         technologies: ['Ruby on Rails', 'CSS', 'HTML', 'JavaScript', 'Bootstrap', 'GitHub'],
         liveVersion: 'https://momo-87.github.io/',
         codeSource:'https://github.com/momo-87/momo-87.github.io'
@@ -45,7 +45,7 @@ let projects = [
     {
         name: 'Keeping track of hundreds of components',
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and...",
-        image: '../images/card2.jpg',
+        image: './images/card2.jpg',
         technologies: ['Ruby on Rails', 'CSS', 'HTML', 'JavaScript', 'Bootstrap', 'GitHub'],
         liveVersion: 'https://momo-87.github.io/',
         codeSource:'https://github.com/momo-87/momo-87.github.io'
@@ -54,7 +54,7 @@ let projects = [
     {
         name: 'Keeping track of hundreds of components',
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and...",
-        image: '../images/card1.jpg',
+        image: './images/card1.jpg',
         technologies: ['Ruby on Rails', 'CSS', 'HTML', 'JavaScript', 'Bootstrap', 'GitHub'],
         liveVersion: 'https://momo-87.github.io/',
         codeSource:'https://github.com/momo-87/momo-87.github.io'
@@ -63,7 +63,7 @@ let projects = [
     {
         name: 'Keeping track of hundreds of components',
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and...",
-        image: '../images/card1.jpg',
+        image: './images/card1.jpg',
         technologies: ['Ruby on Rails', 'CSS', 'HTML', 'JavaScript', 'Bootstrap', 'GitHub'],
         liveVersion: 'https://momo-87.github.io/',
         codeSource:'https://github.com/momo-87/momo-87.github.io'
@@ -72,7 +72,7 @@ let projects = [
     {
         name: 'Keeping track of hundreds of components',
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and...",
-        image: '../images/card1.jpg',
+        image: './images/card1.jpg',
         technologies: ['Ruby on Rails', 'CSS', 'HTML', 'JavaScript', 'Bootstrap', 'GitHub'],
         liveVersion: 'https://momo-87.github.io/',
         codeSource:'https://github.com/momo-87/momo-87.github.io'
@@ -81,7 +81,7 @@ let projects = [
     {
         name: 'Keeping track of hundreds of components',
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and...",
-        image: '../images/card1.jpg',
+        image: './images/card1.jpg',
         technologies: ['Ruby on Rails', 'CSS', 'HTML', 'JavaScript', 'Bootstrap', 'GitHub'],
         liveVersion: 'https://momo-87.github.io/',
         codeSource:'https://github.com/momo-87/momo-87.github.io'
@@ -90,7 +90,7 @@ let projects = [
     {
         name: 'Keeping track of hundreds of components',
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and...",
-        image: '../images/card1.jpg',
+        image: './images/card1.jpg',
         technologies: ['Ruby on Rails', 'CSS', 'HTML', 'JavaScript', 'Bootstrap', 'GitHub'],
         liveVersion: 'https://momo-87.github.io/',
         codeSource:'https://github.com/momo-87/momo-87.github.io'
