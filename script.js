@@ -8,7 +8,7 @@ let popupWindowContent = document.querySelector('#popupWindowContent');
 openMobileMenu.addEventListener('click', function(){
         menuList.classList.add('mobileMenu');
         closeMobileMenu.classList.add('closeMobileMenu');
-})
+});
 
 closeMobileMenu.addEventListener('click', function() {
         menuList.classList.remove('mobileMenu');
@@ -257,10 +257,10 @@ for(let i = 0; i < projects.length; i++) {
         popupWindowContent.append(closeMobilePopupWindow, projectImageBoxs[i], projectTitleBoxs[i], projectTechList[i], projectDescriptions[i], popupButtonsBoxs[i]);
         popupWindow.classList.add('show'); 
         
-    })
+    });
     closeMobilePopupWindow.addEventListener('click', function(){
         popupWindow.classList.remove('show');
-    })
+    });
 }
 
 
