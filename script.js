@@ -1,6 +1,9 @@
 let openMobileMenu = document.querySelector('#openMobileMenu');
 let menuList = document.querySelector('#navMenu')
 let closeMobileMenu = document.querySelector('#closeMobileMenu');
+let popupWindow = document.querySelector('#popupWindow');
+let popupWindowContent = document.querySelector('#popupWindowContent');
+
 
 openMobileMenu.addEventListener('click', function(){
         menuList.classList.add('mobileMenu');
@@ -22,82 +25,99 @@ for(let i = 0; i < navMenuLink.length; i++){
 // Portfolio Mobile menu end
 
 // Portfolio project details popup window start
-// Dynamically creation of the project cards start
 let projects = [
     {
         name: 'Keeping track of hundreds of components',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and...",
-        image: '../images/card1.jpg',
-        technologies: ['Ruby on Rails', 'CSS', 'HTML', 'JavaScript', 'Bootstrap', 'GitHub'],
+        description: "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.</p> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.</p>",
+        image: './images/card1.jpg',
+        technologies: [{name:'Ruby on Rails', url:'https://rubyonrails.org/'}, 
+                       {name:'CSS', url:'https://developer.mozilla.org/en-US/docs/Web/CSS'},
+                       {name:'HTML', url:'https://developer.mozilla.org/en-US/docs/Web/HTML'},
+                       {name:'JavaScript', url:'https://developer.mozilla.org/en-US/docs/Web/JavaScript'},
+                       {name:'Bootstrap', url:'https://getbootstrap.com/'},
+                       {name:'GitHub', url:'https://github.com/'}
+                      ],
         liveVersion: 'https://momo-87.github.io/',
         codeSource:'https://github.com/momo-87/momo-87.github.io'
     },
 
     {
         name: 'Keeping track of hundreds of components',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and...",
-        image: '../images/card1.jpg',
-        technologies: ['Ruby on Rails', 'CSS', 'HTML', 'JavaScript', 'Bootstrap', 'GitHub'],
+        description: "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.</p> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.</p>",
+        image: './images/card2.jpg',
+        technologies: [{name:'Ruby on Rails', url:'https://rubyonrails.org/'}, 
+                       {name:'CSS', url:'https://developer.mozilla.org/en-US/docs/Web/CSS'},
+                       {name:'HTML', url:'https://developer.mozilla.org/en-US/docs/Web/HTML'},
+                       {name:'JavaScript', url:'https://developer.mozilla.org/en-US/docs/Web/JavaScript'},
+                       {name:'Bootstrap', url:'https://getbootstrap.com/'},
+                       {name:'GitHub', url:'https://github.com/'}
+                      ],        
         liveVersion: 'https://momo-87.github.io/',
         codeSource:'https://github.com/momo-87/momo-87.github.io'
     },
 
     {
         name: 'Keeping track of hundreds of components',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and...",
-        image: '../images/card2.jpg',
-        technologies: ['Ruby on Rails', 'CSS', 'HTML', 'JavaScript', 'Bootstrap', 'GitHub'],
+        description: "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.</p> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.</p>",
+        image: './images/card3.jpg',
+        technologies: [{name:'Ruby on Rails', url:'https://rubyonrails.org/'}, 
+                       {name:'CSS', url:'https://developer.mozilla.org/en-US/docs/Web/CSS'},
+                       {name:'HTML', url:'https://developer.mozilla.org/en-US/docs/Web/HTML'},
+                       {name:'JavaScript', url:'https://developer.mozilla.org/en-US/docs/Web/JavaScript'},
+                       {name:'Bootstrap', url:'https://getbootstrap.com/'},
+                       {name:'GitHub', url:'https://github.com/'}
+                      ],        
         liveVersion: 'https://momo-87.github.io/',
         codeSource:'https://github.com/momo-87/momo-87.github.io'
     },
 
     {
         name: 'Keeping track of hundreds of components',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and...",
-        image: '../images/card1.jpg',
-        technologies: ['Ruby on Rails', 'CSS', 'HTML', 'JavaScript', 'Bootstrap', 'GitHub'],
+        description: "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.</p> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.</p>",
+        image: './images/card4.jpg',
+        technologies: [{name:'Ruby on Rails', url:'https://rubyonrails.org/'}, 
+                       {name:'CSS', url:'https://developer.mozilla.org/en-US/docs/Web/CSS'},
+                       {name:'HTML', url:'https://developer.mozilla.org/en-US/docs/Web/HTML'},
+                       {name:'JavaScript', url:'https://developer.mozilla.org/en-US/docs/Web/JavaScript'},
+                       {name:'Bootstrap', url:'https://getbootstrap.com/'},
+                       {name:'GitHub', url:'https://github.com/'}
+                      ],        
         liveVersion: 'https://momo-87.github.io/',
         codeSource:'https://github.com/momo-87/momo-87.github.io'
     },
 
     {
         name: 'Keeping track of hundreds of components',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and...",
-        image: '../images/card1.jpg',
-        technologies: ['Ruby on Rails', 'CSS', 'HTML', 'JavaScript', 'Bootstrap', 'GitHub'],
+        description: "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.</p> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.</p>",
+        image: './images/card5.jpg',
+        technologies: [{name:'Ruby on Rails', url:'https://rubyonrails.org/'}, 
+                       {name:'CSS', url:'https://developer.mozilla.org/en-US/docs/Web/CSS'},
+                       {name:'HTML', url:'https://developer.mozilla.org/en-US/docs/Web/HTML'},
+                       {name:'JavaScript', url:'https://developer.mozilla.org/en-US/docs/Web/JavaScript'},
+                       {name:'Bootstrap', url:'https://getbootstrap.com/'},
+                       {name:'GitHub', url:'https://github.com/'}
+                      ],        
         liveVersion: 'https://momo-87.github.io/',
         codeSource:'https://github.com/momo-87/momo-87.github.io'
     },
 
     {
         name: 'Keeping track of hundreds of components',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and...",
-        image: '../images/card1.jpg',
-        technologies: ['Ruby on Rails', 'CSS', 'HTML', 'JavaScript', 'Bootstrap', 'GitHub'],
-        liveVersion: 'https://momo-87.github.io/',
-        codeSource:'https://github.com/momo-87/momo-87.github.io'
-    },
-
-    {
-        name: 'Keeping track of hundreds of components',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and...",
-        image: '../images/card1.jpg',
-        technologies: ['Ruby on Rails', 'CSS', 'HTML', 'JavaScript', 'Bootstrap', 'GitHub'],
-        liveVersion: 'https://momo-87.github.io/',
-        codeSource:'https://github.com/momo-87/momo-87.github.io'
-    },
-
-    {
-        name: 'Keeping track of hundreds of components',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and...",
-        image: '../images/card1.jpg',
-        technologies: ['Ruby on Rails', 'CSS', 'HTML', 'JavaScript', 'Bootstrap', 'GitHub'],
+        description: "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.</p> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.</p>",
+        image: './images/card1.jpg',
+        technologies: [{name:'Ruby on Rails', url:'https://rubyonrails.org/'}, 
+                       {name:'CSS', url:'https://developer.mozilla.org/en-US/docs/Web/CSS'},
+                       {name:'HTML', url:'https://developer.mozilla.org/en-US/docs/Web/HTML'},
+                       {name:'JavaScript', url:'https://developer.mozilla.org/en-US/docs/Web/JavaScript'},
+                       {name:'Bootstrap', url:'https://getbootstrap.com/'},
+                       {name:'GitHub', url:'https://github.com/'}
+                      ],        
         liveVersion: 'https://momo-87.github.io/',
         codeSource:'https://github.com/momo-87/momo-87.github.io'
     }
+
 ];
 
-// let projectImage = document.querySelectorAll('div.imageBox > img');
 let projectCards = [];
 let projectImageBoxs = [];
 let projectImages = [];
@@ -109,12 +129,21 @@ let projectTechItems = [];
 let projectTechLinks = [];
 let projectButtons = [];
 let projectButtonlinks = [];
+let projectDescriptions = [];
+let popupButtonsBoxs = [];
+let popupLiveButtonBoxs = [];
+let popupLiveLinks = [];
+let popupSourceButtonBoxs = [];
+let popupSourceLinks = [];
 let cardWorks = document.querySelector('#cardWorks');
 
 for(let i = 0; i < projects.length; i++) {
+// Dynamic creation of the project cards Start
+    // Create projectCards container
     projectCards[i] = document.createElement('div');
-    projectCards[i].className = 'projectCard';
+    projectCards[i].classList.add('projectCard', 'flex-column');
 
+    // Create projectImageBox with it content and append it to projectCard
     projectImageBoxs[i] = document.createElement('div');
     projectImageBoxs[i].className = 'projectImageBox';
     projectImages[i] = document.createElement('img');
@@ -123,8 +152,11 @@ for(let i = 0; i < projects.length; i++) {
     projectImageBoxs[i].appendChild(projectImages[i]);
     projectCards[i].appendChild(projectImageBoxs[i]);
 
+    //Create projectTextBox 
     projectTextBoxs[i] = document.createElement('div');
-    projectTextBoxs[i].className = 'projectTextBox';
+    projectTextBoxs[i].classList.add('projectTextBox', 'flex-column');
+
+    // Create projectTitleBox with it content and append it to projectTextBox
     projectTitleBoxs[i] = document.createElement('div');
     projectTitleBoxs[i].className = 'projectTitleBox';
     projectTitles[i] = document.createElement('h2');
@@ -132,39 +164,108 @@ for(let i = 0; i < projects.length; i++) {
     projectTitleBoxs[i].appendChild(projectTitles[i]);
     projectTextBoxs[i].appendChild(projectTitleBoxs[i]);
 
+    // Create projectTechList
     projectTechList[i] = document.createElement('ul');
-    projectTechList[i].className = 'projectTechList';
+    projectTechList[i].classList.add('projectTechList', 'flex-row');
 
+    // Create projectTechListItems with their link and append them to projectTechList
     for(let j = 0; j < projects[i].technologies.length; j++) {
         projectTechItems[j] = document.createElement('li');
         projectTechLinks[j] = document.createElement('a');
-        projectTechLinks[j].alt = 'project image';
-        projectTechLinks[j].src = '#';
-        projectTechLinks[j].innerHTML = projects[i].technologies[j];
+        projectTechLinks[j].href = projects[i].technologies[j].url;
+        projectTechLinks[j].target = '_blank';
+        projectTechLinks[j].rel = 'noopener noreferrer';
+        projectTechLinks[j].innerHTML = projects[i].technologies[j].name;
         projectTechItems[j].appendChild(projectTechLinks[j]);
         projectTechList[i].appendChild(projectTechItems[j]);
     }
+
+    // Append projectTechList to projectTextBox
     projectTextBoxs[i].appendChild(projectTechList[i]);
+
+    // Create See project Button with it content and append it to projectTextBox
     projectButtons[i] = document.createElement('div');
     projectButtons[i].classList.add('projectButton', 'button');
     projectButtonlinks[i] = document.createElement('a');
     projectButtonlinks[i].src = '#';
-    projectButtonlinks[i].innerHTML = 'See project';
+    projectButtonlinks[i].innerHTML = 'See Project';
     projectButtons[i].appendChild(projectButtonlinks[i]);
     projectTextBoxs[i].appendChild(projectButtons[i]);
+
+    // Append projectTextBox to projectCard
     projectCards[i].appendChild(projectTextBoxs[i]);
 
+    // Append projectCard to cardWorks section to make it display in the browser
     cardWorks.appendChild(projectCards[i]);
+// Dynamic creation of the project cards End
+// Dynamic creation of the popup window Start
 
+// Mobile screen size popup window content creation Start
+    // Create projectDescription
+    projectDescriptions[i] = document.createElement('div');
+    projectDescriptions[i].innerHTML =  projects[i].description;
+    projectDescriptions[i].classList.add('projectDescription', 'flex-column');
+
+    // Create popupButtonsBox
+    popupButtonsBoxs[i] = document.createElement('div');
+    popupButtonsBoxs[i].classList.add('popupButtonsBox', 'flex-row');
+
+    // Create PopupLiveButton and append it to popupButtonBox
+    popupLiveButtonBoxs[i] = document.createElement('div');
+    popupLiveButtonBoxs[i].classList.add('popupLiveButtonBox', 'flex-row');
+    popupLiveLinks[i] = document.createElement('a');
+    popupLiveLinks[i].href = projects[i].liveVersion;
+    popupLiveLinks[i].target = '_blank';
+    popupLiveLinks[i].rel = 'noopener noreferrer';
+    popupLiveLinks[i].innerHTML = 'See live';
+    popupLiveButtonBoxs[i].appendChild(popupLiveLinks[i]);
+    let liveButtonIcon = document.createElement('img');
+    liveButtonIcon.src = './Icons/live.png';
+    liveButtonIcon.alt = 'live icon';
+    popupLiveButtonBoxs[i].appendChild(liveButtonIcon);
+
+    // Append popupLiveButtonBox to popupButtonsBox
+    popupButtonsBoxs[i].appendChild(popupLiveButtonBoxs[i]);
+
+    // Create PopupSourceButton and append it to popupButtonBox
+    popupSourceButtonBoxs[i] = document.createElement('div');
+    popupSourceButtonBoxs[i].classList.add('popupSourceButtonBox', 'flex-row');
+    popupSourceLinks[i] = document.createElement('a');
+    popupSourceLinks[i].href = projects[i].codeSource;
+    popupSourceLinks[i].target = '_blank';
+    popupSourceLinks[i].rel = 'noopener noreferrer';
+    popupSourceLinks[i].innerHTML = 'See source';
+    popupSourceButtonBoxs[i].appendChild(popupSourceLinks[i]);
+    let sourceButtonIcon = document.createElement('img');
+    sourceButtonIcon.src = './Icons/source.png';
+    sourceButtonIcon.alt = 'source icon';
+    popupSourceButtonBoxs[i].appendChild(sourceButtonIcon);
+    
+    // Append popupSourceButtonBox to popupButtonsBox
+    popupButtonsBoxs[i].appendChild(popupSourceButtonBoxs[i]);
+
+// Mobile screen size popup window content creation End
+
+// Open and close popup window 
+    // Create close mobile popup window
+    let closeMobilePopupWindow = document.createElement('img');
+    closeMobilePopupWindow.src = './Icons/closeMobilePopup.png';
+    closeMobilePopupWindow.alt = 'close popup';
+    
+    projectButtons[i].addEventListener('click', function(){
+        popupWindowContent.classList.add('flex-column');
+        popupWindowContent.append(closeMobilePopupWindow, projectImageBoxs[i], projectTitleBoxs[i], projectTechList[i], projectDescriptions[i], popupButtonsBoxs[i]);
+        popupWindow.classList.add('show'); 
+        
+    })
+
+    closeMobilePopupWindow.addEventListener('click', function(){
+        popupWindow.classList.remove('show');
+    })
 }
 
 
 
-
-
-
-
-let projectButton = document.querySelectorAll('.projectButton');
 
 
 
