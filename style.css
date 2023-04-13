@@ -247,9 +247,9 @@ body {
   }
 
   .popupWindowContentBox .popupWindowContent > img {
-    position: fixed;
-    width: 14px;
-    height: 14px;
+    position: absolute;
+    width: 24px;
+    height: 24px;
     margin-top: 21px;
     margin-left: 73%;
   }
@@ -270,7 +270,12 @@ body {
     transform: scale(105%);
   }
 
-  .projectCard .projectTextBox {
+  .popupWindowContent .projectImageBox img:hover {
+    transform: none;
+  }
+
+  .projectCard .projectTextBox,
+  .popupWindowContent .projectTextBox {
     align-items: center;
     row-gap: 16px;
   }
@@ -287,8 +292,13 @@ body {
   }
 
   .popupWindowContent h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44px;
     text-align: left;
     margin-top: 0;
+    margin-left: 0;
+    color: #172b4d;
   }
 
   .projectTechList {
@@ -336,10 +346,12 @@ body {
 
   /* popup details window content start */
   .popupWindow {
-    background: #c1c7d0;
+    background: rgba(25, 26, 25, 0.7);
     position: fixed;
     width: 100%;
     z-index: 10;
+    height: 100%;
+    overflow-y: auto;
     display: none;
   }
 
@@ -406,12 +418,12 @@ body {
     color: #fff;
   }
 
-  .popupButtonsBox .popupLiveButtonBox img {
+  .popupWindowContent .popupButtonsBox .popupLiveButtonBox img {
     height: 16px;
     width: 16px;
   }
 
-  .popupButtonsBox .popupSourceButtonBox img {
+  .popupWindowContent .popupButtonsBox .popupSourceButtonBox img {
     height: 20px;
     width: 18px;
   }
@@ -623,6 +635,46 @@ body {
 /* Mobile version end */
 
 @media only screen and (min-width: 768px) {
+  .popupWindow {
+    height: 100%;
+    overflow-y: auto;
+    background: rgba(25, 26, 25, 0.7);
+    padding-bottom: 110px;
+  }
+
+  .popupWindowContentBox {
+    width: 64%;
+    margin: 122px auto 0 18%;
+    padding-top: 60px;
+    padding-bottom: 44px;
+  }
+
+  .popupWindowContent > img {
+    width: 40px;
+    height: 40px;
+    top: 135px;
+    right: 21.2%;
+    padding: 0;
+    margin-left: 95.4%;
+  }
+
+  .popupWindowContent .projectTechList {
+    justify-content: left;
+  }
+
+  .popupWindowContent h2 {
+    font-weight: 700;
+  }
+
+  .popupWindowContent .projectTitleBox {
+    width: 67.5%;
+  }
+
+  .popupTitleAndButtonsBox .popupButtonsBox {
+    width: 50%;
+    flex-wrap: wrap;
+  }
+
   .header_headline_container {
     background: url('./images/Header-llustration-desktop.png') 50% top no-repeat;
   }
@@ -747,7 +799,7 @@ body {
     row-gap: 32px;
   }
 
-  .projectTechList {
+  .projectTextBox .projectTechList {
     width: 89.16%;
     flex-wrap: wrap;
     justify-content: center;

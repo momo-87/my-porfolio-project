@@ -1,14 +1,13 @@
 let openMobileMenu = document.querySelector('#openMobileMenu');
 let menuList = document.querySelector('#navMenu')
 let closeMobileMenu = document.querySelector('#closeMobileMenu');
-let popupWindow = document.querySelector('#popupWindow');
-let popupWindowContent = document.querySelector('#popupWindowContent');
+
 
 
 openMobileMenu.addEventListener('click', function(){
         menuList.classList.add('mobileMenu');
         closeMobileMenu.classList.add('closeMobileMenu');
-});
+})
 
 closeMobileMenu.addEventListener('click', function() {
         menuList.classList.remove('mobileMenu');
@@ -187,7 +186,7 @@ for(let i = 0; i < projects.length; i++) {
     projectButtons[i] = document.createElement('div');
     projectButtons[i].classList.add('projectButton', 'button');
     projectButtonlinks[i] = document.createElement('a');
-    projectButtonlinks[i].src = '#';
+    projectButtonlinks[i].href = '#';
     projectButtonlinks[i].innerHTML = 'See Project';
     projectButtons[i].appendChild(projectButtonlinks[i]);
     projectTextBoxs[i].appendChild(projectButtons[i]);
@@ -198,13 +197,73 @@ for(let i = 0; i < projects.length; i++) {
     // Append projectCard to cardWorks section to make it display in the browser
     cardWorks.appendChild(projectCards[i]);
 // Dynamic creation of the project cards End
-// Dynamic creation of the popup window Start
+}
 
-// Mobile screen size popup window content creation Start
+let popupWindow = document.querySelector('#popupWindow');
+let popupWindowContent = document.querySelector('#popupWindowContent');
+let popupImageBoxs = [];
+let popupImages = [];
+let popupTextBoxs = [];
+let popupTitleBoxs = [];
+let popupTitles = [];
+let popupTechList = [];
+let popupTechItems = [];
+let popupTechLinks = [];
+
+let closeMobilePopupWindow = document.createElement('img');
+closeMobilePopupWindow.src = './Icons/closePopup.png';
+closeMobilePopupWindow.alt = 'close popup';
+
+// popupWindowContent.append(closeMobilePopupWindow);
+
+for(let i = 0; i < projects.length; i++) {
+
+    // Create popupImageBox with it content and append it to popupWindowContent
+    popupImageBoxs[i] = document.createElement('div');
+    popupImageBoxs[i].className = 'projectImageBox';
+    popupImages[i] = document.createElement('img');
+    popupImages[i].src = projects[i].image;
+    popupImages[i].alt = 'project image';
+    popupImageBoxs[i].appendChild(popupImages[i]);
+
+    //Create popup window projectTextBox 
+    popupTextBoxs[i] = document.createElement('div');
+    popupTextBoxs[i].classList.add('projectTextBox', 'flex-column');
+
+    // Create popupTitleBox with it content and append it to popup window projectTextBox
+    popupTitleBoxs[i] = document.createElement('div');
+    popupTitleBoxs[i].className = 'projectTitleBox';
+    popupTitles[i] = document.createElement('h2');
+    popupTitles[i].innerHTML = projects[i].name;
+    popupTitleBoxs[i].appendChild(popupTitles[i]);
+    popupTextBoxs[i].appendChild(popupTitleBoxs[i]);
+
+    // Create popupTechList
+    popupTechList[i] = document.createElement('ul');
+    popupTechList[i].classList.add('projectTechList', 'flex-row');
+
+    // Create projectTechListItems with their link and append them to projectTechList
+    for(let j = 0; j < projects[i].technologies.length; j++) {
+        popupTechItems[j] = document.createElement('li');
+        popupTechLinks[j] = document.createElement('a');
+        popupTechLinks[j].href = projects[i].technologies[j].url;
+        popupTechLinks[j].target = '_blank';
+        popupTechLinks[j].rel = 'noopener noreferrer';
+        popupTechLinks[j].innerHTML = projects[i].technologies[j].name;
+        popupTechItems[j].appendChild(popupTechLinks[j]);
+        popupTechList[i].appendChild(popupTechItems[j]);
+    }
+
+    // Append projectTechList to projectTextBox
+    popupTextBoxs[i].appendChild(popupTechList[i]);
+
+
+    // Mobile screen size popup window content creation Start
     // Create projectDescription
     projectDescriptions[i] = document.createElement('div');
     projectDescriptions[i].innerHTML =  projects[i].description;
     projectDescriptions[i].classList.add('projectDescription', 'flex-column');
+
 
     // Create popupButtonsBox
     popupButtonsBoxs[i] = document.createElement('div');
@@ -244,28 +303,27 @@ for(let i = 0; i < projects.length; i++) {
     // Append popupSourceButtonBox to popupButtonsBox
     popupButtonsBoxs[i].appendChild(popupSourceButtonBoxs[i]);
 
+
 // Mobile screen size popup window content creation End
 
 // Open and close popup window 
     // Create close mobile popup window
-    let closeMobilePopupWindow = document.createElement('img');
-    closeMobilePopupWindow.src = './Icons/closeMobilePopup.png';
-    closeMobilePopupWindow.alt = 'close popup';
-    
     projectButtons[i].addEventListener('click', function(){
         popupWindowContent.classList.add('flex-column');
-        popupWindowContent.append(closeMobilePopupWindow, projectImageBoxs[i], projectTitleBoxs[i], projectTechList[i], projectDescriptions[i], popupButtonsBoxs[i]);
-        popupWindow.classList.add('show'); 
-        
+        if(window.innerWidth < 768){
+            popupWindowContent.append(closeMobilePopupWindow, popupImageBoxs[i], popupTitleBoxs[i], popupTechList[i], projectDescriptions[i], popupButtonsBoxs[i]);
+        } else{
+            let popupTitleAndButtonsBox = document.createElement('div');
+            popupTitleAndButtonsBox.classList.add('popupTitleAndButtonsBox', 'flex-row');
+            popupTitleAndButtonsBox.append(popupTitleBoxs[i], popupButtonsBoxs[i]);
+            popupWindowContent.append(closeMobilePopupWindow, popupImageBoxs[i], popupTitleAndButtonsBox, popupTechList[i], projectDescriptions[i]);
+        }
+        document.body.style.position = 'fixed';
+        popupWindow.classList.add('show');    
     });
     closeMobilePopupWindow.addEventListener('click', function(){
+        popupWindowContent.innerHTML = '';
+        document.body.style.position = '';
         popupWindow.classList.remove('show');
     });
 }
-
-
-
-
-
-
-
