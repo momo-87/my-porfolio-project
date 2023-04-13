@@ -258,7 +258,6 @@ for(let i = 0; i < projects.length; i++) {
         popupWindow.classList.add('show'); 
         
     })
-
     closeMobilePopupWindow.addEventListener('click', function(){
         popupWindow.classList.remove('show');
     })
