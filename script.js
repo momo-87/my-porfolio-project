@@ -347,7 +347,6 @@ contactForm.addEventListener('submit', (event) => {
         errorMsgContainer.innerHTML = 'Please enter a correct email address format(lowercase only)!';
     }
     else {
-        //Submit the form
         contactForm.submit();
     }
 });
