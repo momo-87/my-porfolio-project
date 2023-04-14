@@ -576,9 +576,6 @@ body {
     border-radius: 4px;
   }
 
-  .errorMsgContainer {
-    color: red;
-  }
 
   ::placeholder {
     font-size: 15px;
