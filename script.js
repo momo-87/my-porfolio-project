@@ -344,7 +344,7 @@ contactForm.addEventListener('submit', (event) => {
 
     // Validate the form
     if(emailAddress !== emailAddress.toLowerCase()){
-        errorMsgContainer.innerHTML = 'Please enter a correct email address format(lowercase only)!';
+        errorMsgContainer.innerHTML = 'Invalid Email Format. Please enter a correct email address (lowercase only)!';
     }
     else {
         //Submit the form
