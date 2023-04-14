@@ -562,18 +562,22 @@ body {
     text-align: center;
   }
 
-  .about_form ul {
+  .contactForm ul {
     width: 87.2%;
     margin-top: 58px;
     margin-left: 6.4%;
     row-gap: 24px;
   }
 
-  .about_form input {
+  .contactForm input {
     width: 100%;
     height: 48px;
     border: 1px solid #d0d9d4;
     border-radius: 4px;
+  }
+
+  .errorMsgContainer {
+    color: red;
   }
 
   ::placeholder {
@@ -584,7 +588,7 @@ body {
     padding-left: 16px;
   }
 
-  .about_form textarea {
+  .contactForm textarea {
     width: 100%;
     height: 114px;
     font-size: 15px;
@@ -892,13 +896,14 @@ body {
     }
   }
 
-  .about_form {
+  .contactForm {
     width: 100%;
     margin-left: 0;
     margin-top: 80px;
+    padding-bottom: 30px;
   }
 
-  .about_form ul {
+  .contactForm ul {
     margin-top: 0;
   }
 

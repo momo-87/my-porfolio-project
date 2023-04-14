@@ -327,3 +327,28 @@ for(let i = 0; i < projects.length; i++) {
         popupWindow.classList.remove('show');
     });
 }
+
+
+// Contact Form Validation Start
+let contactForm = document.querySelector('.contactForm');
+let contactFormEmail = document.querySelector('#email');
+let contactFormList = document.querySelector('.contactFormList');
+let errorMsgContainer = document.createElement('li');
+errorMsgContainer.className = 'errorMsgContainer';
+contactFormList.appendChild(errorMsgContainer);
+
+contactForm.addEventListener('submit', (event) => {
+    let emailAddress = contactFormEmail.value.replace(/[^a-zA-Z ]/g, "");
+	// stop form submission
+	event.preventDefault();
+
+    // Validate the form
+    if(emailAddress !== emailAddress.toLowerCase()){
+        errorMsgContainer.innerHTML = 'Please enter a correct email address format(lowercase only)!';
+    }
+    else {
+        //Submit the form
+        contactForm.submit();
+    }
+
+})
