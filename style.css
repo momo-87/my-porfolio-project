@@ -552,6 +552,10 @@ body {
     margin-top: 54px;
   }
 
+  .errorMsgContainer {
+    color: red;
+  }
+
   .about_bottom .text_box {
     width: 87.2%;
     margin-left: 6.4%;
@@ -574,10 +578,6 @@ body {
     height: 48px;
     border: 1px solid #d0d9d4;
     border-radius: 4px;
-  }
-
-  .errorMsgContainer {
-    color: red;
   }
 
   ::placeholder {
