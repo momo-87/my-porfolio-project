@@ -392,7 +392,7 @@ body {
 
   .popupLiveButtonBox,
   .popupSourceButtonBox {
-    background: #36b37f;
+    background: #008552;
     border-radius: 4px;
   }
 
@@ -408,6 +408,12 @@ body {
     justify-content: center;
     align-items: center;
     gap: 15px;
+  }
+
+  .popupLiveButtonBox:hover,
+  .popupSourceButtonBox:hover {
+    box-shadow: 0 10px 16px 10px rgba(54, 179, 127, 0.5);
+    border-radius: 5px;
   }
 
   .popupButtonsBox .popupLiveButtonBox a,
