@@ -624,6 +624,12 @@ body {
     background-color: #008552;
   }
 
+  #name,
+  #email,
+  #textarea {
+    padding-left: 20px;
+  }
+
   .about_bottom .my_email {
     margin-top: 31px;
     font-size: 20px;

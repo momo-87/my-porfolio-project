@@ -112,18 +112,18 @@
         <div id="contactMe" class="about_bottom flex-column">
             <div class="text_box">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</div>
             <form action="https://formspree.io/f/xeqwroeb" class="contactForm" method="post">
-                <ul class="flex-column contactFormList">
+                <ul class="flex-column contactFormList" id="contactFormList">
                     <li>
                         <label for="name">Name</label>
-                        <input type="text" name="user_name" id="name" placeholder="Full name" maxlength="30" required>
+                        <input type="text" name="user_name" id="name" placeholder="Full name" maxlength="30" required class="name">
                     </li>
                     <li>
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Email address" required>
+                        <input type="email" name="email" id="email" placeholder="Email address" required class="email">
                     </li>
                     <li>
                         <label for="textarea">Text area</label>
-                        <textarea name="textarea" id="textarea" maxlength="500" required>Hey I’d like to connect to...</textarea>
+                        <textarea name="textarea" id="textarea" maxlength="500" required  placeholder="Hey I’d like to connect to..." class="textarea"></textarea>
                     </li>
                     <li>
                         <button type="submit" class="getInTouch button">Get in touch</button>
