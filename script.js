@@ -344,3 +344,31 @@ contactForm.addEventListener('submit', (event) => {
     contactForm.submit();
   }
 });
+// Contact form validation End
+
+// Preserve Data in the Browser Start
+const contactFormData = { name: '', email: '', message: '' };
+contactFormList.addEventListener('input', (event) => {
+  if (event.target.classList.contains('name')) {
+    contactFormData.name = event.target.value;
+  }
+  if (event.target.classList.contains('email')) {
+    contactFormData.email = event.target.value;
+  }
+  if (event.target.classList.contains('textarea')) {
+    contactFormData.message = event.target.value;
+  }
+  // Check browser support for localStorage
+  if (typeof (Storage) !== 'undefined') {
+  // Storing Data
+    localStorage.setItem('userContactFormData', JSON.stringify(contactFormData));
+  }
+});
+
+// retrieving Data
+const retrievedData = localStorage.getItem('userContactFormData');
+window.addEventListener('load', () => {
+  document.querySelector('#name').value = JSON.parse(retrievedData).name;
+  contactFormEmail.value = JSON.parse(retrievedData).email;
+  document.querySelector('#textarea').value = JSON.parse(retrievedData).message;
+});
