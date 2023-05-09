@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 <div align="center">
-  <img src="./assets/logo.png" alt="logo"/>
+  <img src="./images/logo.png" alt="logo"/>
   <br/>
 
   <h3><b>My Porfolio</b></h3>
