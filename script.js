@@ -347,8 +347,8 @@ contactForm.addEventListener('submit', (event) => {
 // Contact form validation End
 
 // Preserve Data in the Browser Start
-const contactFormData = { name: '', email: '', message: '' };
 contactFormList.addEventListener('input', (event) => {
+  const contactFormData = { name: '', email: '', message: '' };
   if (event.target.classList.contains('name')) {
     contactFormData.name = event.target.value;
   }

@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 <div align="center">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_ylEbgcaMVc3x3rXFLwMF42Bc69GPF66QWw&usqp=CAU" alt="logo" width="140"  height="auto" />
+  <img src="./assets/logo.png" alt="logo"/>
   <br/>
 
   <h3><b>My Porfolio</b></h3>
