@@ -282,6 +282,11 @@ body {
     row-gap: 16px;
   }
 
+  .projectTitleBox {
+    padding: 0;
+    width: 100%;
+  }
+
   .projectTitleBox h2 {
     display: inline-block;
     width: 90%;
@@ -290,7 +295,7 @@ body {
     font-weight: 600;
     text-align: center;
     color: #3a4a42;
-    margin: 16px 5% 0 5%;
+    margin: 10px 5% 0 5%;
   }
 
   .popupWindowContent h2 {
