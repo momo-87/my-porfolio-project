@@ -1,11 +1,11 @@
 <a name="readme-top"></a>
 <div align="center">
-  <img src="./images/logo.png" alt="logo"/>
+  <img src="./photo.png" alt="photo" width="80"/>
+  <img src="./intro.png" alt="logo"/>
   <br/>
-
-  <h3><b>My Porfolio</b></h3>
-
+  <h2><b>My Porfolio</b></h2>
 </div>
+
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -28,22 +28,20 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
+<br>
+
 # 📖 My Porfolio Project <a name="porfolio-project"></a>
+> This is my portfolio project. I created using HTML, CSS, and JavaScript. It is an online website that I use to share with the world the projects that I have built. From there you can access the live version and source code of each project and I hope it will give you an idea about my journey as a full-stack developer.
 
-> This is my portfolio project. I created using HTML, CSS and JavaScript.
-> Below is the link to the live version:
-  https://momo-87.github.io/
-
+<br>
 
 ## 🛠 Built With <a name="built-with"></a>
-1- HTML.
-2- CSS.
-3- JavaScript
-4- LINTERS.
-5- [Loom video](https://www.loom.com/share/2ce37a7925314ac8a15d9b0606ca86e3).
+- HTML.
+- CSS.
+- JavaScript
+- [Loom video](https://www.loom.com/share/2ce37a7925314ac8a15d9b0606ca86e3).
 
 ### Tech Stack <a name="tech-stack"></a>
-
 <details>
   <summary>Client</summary>
   <ul>
@@ -53,115 +51,85 @@
     <li><a href="https://www.loom.com/share/2ce37a7925314ac8a15d9b0606ca86e3">Loom video</a></li>
   </ul>
 </details>
-
+<br>
 
 ### Key Features <a name="key-features"></a>
-
-- Added index.html file.
-- Added style.css file.
-- Added script.js file.
-
+- index.html file.
+- style.css file.
+- script.js file.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-> https://momo-87.github.io/
-
+>[Live Demo](https://momo-87.github.io/)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-To get a local copy up and running, follow these steps.
+>To get a local copy up and running, follow these steps.
 
 ### Prerequisites
-
 1. Web browser.
 2. Code Editor.
 3. Git-smc.
 
 ### Setup
-
-Clone this repository to your desired folder:
-
-Run this command:
-
+> To clone this repository to your desired folder, run this command:
 ```sh
   cd my-folder
   git clone https://github.com/momo-87/my-porfolio-project.git
 ```
 
 ### Install
-
-Run this command:
-
+>Run this command:
 ```sh
   cd my-project
   npm install
 ```
 
 ### Usage
-
-To run the project, execute the following command:
-
-Open index.html using live server extension.
+> To run the project, open index.html using live server extension.
 
 ### Run tests
+>Coming soon
 
-Coming soon
-
-### Deployment
-
-Coming soon
-
+<!-- ### Deployment
+Coming soon -->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 👥 Authors <a name="authors"></a>
-
+## 👥 Author <a name="authors"></a>
 👤 Christian Romuald MOMO TONFACK
-
 - GitHub: [@githubhandle](https://github.com/Momo-87)
 - Twitter: [@twitterhandle](https://twitter.com/Momo_yde)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/christian-momo/)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 🔭 Future Features <a name="future-features"></a>
-
 - [ ] Add Header.
 - [ ] Add Footer.
+- [ ] Popup window
 - [ ] Add more styles.
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 🤝 Contributing <a name="contributing"></a>
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
+> Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](https://github.com/momo-87/my-porfolio-project/issues).
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project just give it a star ⭐️.
-
+>If you like this project just give it a star ⭐️.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-I would like to thank Microverse.
-
+>I would like to thank Microverse.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 📝 License <a name="license"></a>
-
-This project is [MIT](./LICENSE) licensed.
-
+>This project is [MIT](./LICENSE) licensed.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -54,7 +54,7 @@ body {
   }
 
   .logo-container img {
-    width: 160%;
+    width: 90%;
   }
 
   .logo-container h1 a {
@@ -710,13 +710,17 @@ body {
   }
 
   .logo-container {
-    width: 10%;
+    width: 3.5%;
+    height: 50px;
     margin-top: 16px;
     margin-left: 10%;
+
+    /* border: 3px solid #172b4d; */
+    border-radius: 50%;
   }
 
   .logo-container img {
-    width: 160%;
+    width: 130%;
   }
 
   nav {
