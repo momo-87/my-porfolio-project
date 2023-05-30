@@ -34,37 +34,33 @@ label {
 body {
   max-width: 1440px;
   margin: 0 auto 0 auto;
+  background: url('./assets/background.gif');
+  background-attachment: fixed;
 }
 
 /* Mobile version start */
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 320px) {
+  .popupWindowContent i.fa-circle-xmark {
+    margin-left: 90%;
+    width: 10%;
+    font-size: 1.5rem;
+  }
   header {
     position: fixed;
     width: 100%;
     height: 48px;
     margin-top: 0;
-    background: #ffff;
   }
 
   .logo-container {
     width: 26.7%;
     height: 40px;
-    margin-top: 4px;
+    margin-top: 10px;
     margin-left: 3.2%;
   }
 
   .logo-container img {
     width: 90%;
-  }
-
-  .logo-container h1 a {
-    height: 20px;
-    margin-top: 10px;
-    color: #172b4d;
-    font-size: 18px;
-    line-height: 20px;
-    font-weight: 700;
-    white-space: nowrap;
   }
 
   nav {
@@ -81,10 +77,10 @@ body {
     width: 130.9%;
     margin-top: -44px !important;
     padding-top: 150px;
-    padding-left: 7.5%;
+    padding-left: 50%;
     margin-left: -30.9%;
     height: 738px;
-    background-color: white;
+    background-color: #000000;
     position: relative;
     z-index: 5;
   }
@@ -99,15 +95,19 @@ body {
 
   .navMenu li a {
     font-weight: 600;
-    font-size: 32px;
+    font-size: 1.5rem;
     line-height: 44px;
-    color: #3a4a42;
+    color: #f1f6f9;
   }
 
-  .openCloseMobileMenuButton img:nth-child(1) {
+  i.fa-solid {
+    color: #f1f6f9;
+  }
+
+  .openCloseMobileMenuButton i:nth-child(1) {
     width: 60%;
     height: 24px;
-    margin-top: 8px;
+    margin-top: 15px;
     margin-left: 20%;
   }
 
@@ -116,23 +116,21 @@ body {
   }
 
   #closeMobileMenu.closeMobileMenu {
-    width: 40%;
-    height: 18px;
+    width: 60%;
+    height: 24px;
     position: absolute;
     z-index: 6;
-    margin-top: 10px;
-    margin-left: -50%;
+    margin-top: 15px;
+    margin-left: -60%;
   }
 
   /* Mobile Version Header end */
 
   /* Mobile Version Headline section start */
   .headline {
-    background: url('./images/Frame1.png') right 3% no-repeat, url('./images/Frame2.png') right 44% no-repeat, url('./images/Frame3.png') right 100% no-repeat, url('./images/Frame4.png') 4% 23% no-repeat, url('./images/Frame5.png') left 82% no-repeat, url('./images/Frame6.png') 50% 0 no-repeat, url('./images/Frame7.png') 41% 76% no-repeat;
-    background-size: 83px 106px, 41px 177px, 59px 59px, 35px 33px, 54px 94px, 381px 569px, 25px 27px;
     align-items: center;
     text-align: center;
-    color: #172b4d;
+    color: #f1f6f9;
     margin-top: 44px;
   }
 
@@ -148,25 +146,32 @@ body {
 
   .welcome_text {
     height: auto;
-    margin: 56px auto 0 auto;
+    margin: 20px auto 0 auto;
   }
 
   .welcome_text h1 {
-    font-size: 40px;
-    line-height: 52px;
+    line-height: 40px;
     font-weight: 700;
+    font-size: 2rem;
   }
 
-  .welcome_text h1 span {
-    color: #36b37e;
+  .welcome_text h1 span.hi {
+    color: #ff6000;
+    font-size: 0.8rem;
+    font-weight: lighter;
+  }
+
+  .welcome_text h1 span.qualification {
+    color: #9ba4b5;
+    font-size: 2rem;
   }
 
   .introduction_text {
-    font-size: 20px;
+    font-size: 1rem;
     line-height: 28px;
-    text-align: center;
-    font-weight: 400;
-    margin-top: 15px;
+    text-align: justify;
+    margin-top: 30px;
+    color: #f1f6f9;
   }
 
   .social_media_icons,
@@ -179,8 +184,12 @@ body {
   .social_media_icons ul,
   .desktop_social_media_icons ul {
     justify-content: space-around;
-    gap: 10px;
-  }
+    gap: 15%;
+    }
+
+    i.fa-brands {
+      color: #f1f6f9;
+    }
 
   .desktop_social_media_icons {
     display: none;
@@ -197,14 +206,15 @@ body {
     width: 40px;
     height: 40px;
     margin-top: 4px;
-    border: 1px solid #dfe1e6;
+    border: 1px solid #f1f6f9;
     border-radius: 32px;
   }
 
-  .action .icon img {
+  i.fa-angle-down {
     width: 24px;
     height: 24px;
-    margin-top: 8px;
+    margin-top: 12px;
+    color: #ff6000;
   }
 
   /* Mobiel version Headline section end */
@@ -222,10 +232,10 @@ body {
   }
 
   .recent_work_primary_text {
-    font-size: 40px;
-    color: #172b4d;
+    font-size: 1.5rem;
+    color: #f1f6f9;
     font-weight: 700;
-    line-height: 52px;
+    line-height: 30px;
     text-align: center;
     margin-top: 20px;
   }
@@ -235,17 +245,17 @@ body {
     white-space: pre;
   }
 
-  .recent_works .indicator {
+  .indicator {
     width: 48px;
     height: 4px;
     margin: auto;
-    margin-top: 24px;
-    background-color: #36b37e;
+    margin-top: 10px;
+    background-color: #ff6000;
   }
 
   .card_works {
     row-gap: 24px;
-    margin-top: 58px;
+    margin-top: 40px;
   }
 
   .popupWindowContentBox .popupWindowContent > img {
@@ -257,9 +267,10 @@ body {
   }
 
   .projectCard {
-    border: 1px solid #d0d9d4;
+    border: 1px solid #212a3e;
     border-radius: 8px;
     overflow: hidden;
+    box-shadow: 5px 5px rgb(33, 42, 62, 0.3);
   }
 
   .projectCard .projectImageBox img,
@@ -290,22 +301,22 @@ body {
   .projectTitleBox h2 {
     display: inline-block;
     width: 90%;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 30px;
     font-weight: 600;
     text-align: center;
-    color: #3a4a42;
+    color: #f1f6f9;
     margin: 10px 5% 0 5%;
   }
 
   .popupWindowContent h2 {
-    font-size: 32px;
+    font-size: 1.5rem;
     font-weight: 600;
     line-height: 44px;
-    text-align: left;
+    text-align: center;
     margin-top: 0;
     margin-left: 0;
-    color: #172b4d;
+    color: #f1f6f9;
   }
 
   .projectTechList {
@@ -322,8 +333,8 @@ body {
     font-size: 12px;
     font-weight: 600;
     line-height: 16px;
-    color: #3a4a42;
-    background-color: #ebf0ee;
+    color: #f1f6f9;
+    border: 1px solid #394867;
     border-radius: 4px;
   }
 
@@ -341,14 +352,14 @@ body {
     width: 40%;
     height: 48px;
     margin: 13px auto 24px 30%;
-    background-color: #008552;
+    border: 1px solid #ff6000;
     border-radius: 4px;
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
     text-align: center;
     padding-top: 10px;
-    color: #fff;
+    color: #f1f6f9;
   }
 
   /* popup details window content start */
@@ -369,7 +380,7 @@ body {
   .popupWindowContentBox {
     width: 91.5%;
     margin: 20px auto 26px 4.3%;
-    background: #ffff;
+    background: url('./assets/background.gif');
     border-radius: 16px;
     z-index: 15;
   }
@@ -384,10 +395,10 @@ body {
   .projectDescription {
     text-align: justify;
     gap: 24px;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
-    color: #344563;
+    color: #f1f6f9;
   }
 
   .popupButtonsBox {
@@ -399,8 +410,8 @@ body {
 
   .popupLiveButtonBox,
   .popupSourceButtonBox {
-    background: #008552;
     border-radius: 4px;
+    border: 1px solid #ff6000;
   }
 
   .popupLiveButtonBox {
@@ -425,10 +436,10 @@ body {
 
   .popupButtonsBox .popupLiveButtonBox a,
   .popupButtonsBox .popupSourceButtonBox a {
-    font-size: 17px;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 24px;
-    color: #fff;
+    color: #f1f6f9;
   }
 
   .popupWindowContent .popupButtonsBox .popupLiveButtonBox img {
@@ -446,10 +457,6 @@ body {
   /* Mobile version Recent works section end */
 
   /* Mobile version About me section start */
-  .about_me {
-    background: url('./images/illustration\ 2-about\ me\ mobile.jpg') left 14.5% no-repeat, url('./images/illustration\ 1-\ about\ me-mobile.jpg') right 0.5% no-repeat, url('./images/illustration-contact-form.jpg') right 97% no-repeat;
-    background-size: 71px 58px, 68px 110px, 63px 146px;
-  }
 
   .about_me_text {
     width: 93.6%;
@@ -459,37 +466,34 @@ body {
 
   .about_primary_text {
     width: 100%;
-    font-size: 40px;
-    color: #172b4d;
+    font-size: 1.5rem;
+    color: #f1f6f9;
     font-weight: 700;
-    line-height: 52px;
+    line-height: 30px;
     text-align: center;
   }
 
   .about_supporting-text {
-    font-size: 20px;
-    line-height: 32px;
-    text-align: center;
-    font-weight: 400;
-    color: #172b4d;
-    margin-top: 24px;
+    font-size: 1rem;
+    line-height: 28px;
+    text-align: justify;
+    color: #f1f6f9;
+    margin-top: 10px;
+    padding: 2%;
   }
 
   .about_me .about_me_text .resume_button a {
     display: inline-block;
     width: 43.6%;
     height: 48px;
-    margin-top: 24px;
-    margin-left: 30%;
-    margin-bottom: 24px;
-    background-color: #008552;
-    border-radius: 4px;
+    margin: 24px 0 24px 30%;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 1rem;
     line-height: 24px;
     text-align: center;
     padding-top: 10px;
-    color: #fff;
+    color: #f1f6f9;
+    border: 1px solid #ff6000;
   }
 
   .about_me_text .resume_button a:hover {
@@ -506,31 +510,32 @@ body {
     display: block;
     width: 87.2%;
     margin-left: 6.4%;
-    background-color: #ebf0ee;
+    background: rgba(0, 0, 0, 0.8);
     border-radius: 8px;
+    border: 1px solid #394867;
   }
 
   .card_list_icon {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     margin: auto;
     margin-top: 40px;
     border-radius: 40px;
-    background-color: #fff;
   }
 
   .about_card_list .card_list .card_list_icon img {
     margin: auto;
+    width: 100%;
   }
 
   .about_card_title {
     height: 32px;
-    margin-top: 28px;
+    margin-top: 20px;
     font-size: 24px;
     line-height: 32px;
     font-weight: 600;
     text-align: center;
-    color: #3a4a42;
+    color: #9ba4b5;
   }
 
   .about_card_tags {
@@ -545,15 +550,23 @@ body {
   }
 
   .about_card_tags li {
-    display: inline-block;
-    padding: 10px;
     border-radius: 8px;
-    background-color: #fff;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 16px;
-    color: #28845d;
+    font-size: 0.6rem;
+    font-weight: 400;
+    color: #f1f6f9;
+    align-items: center;
+    justify-content: center;
   }
+
+  .about_card_tags li h3 {
+    text-align: center;
+  }
+
+  .about_card_tags li img {
+    width: 50%;
+  }
+
+
 
   .about_bottom {
     margin-top: 54px;
@@ -566,10 +579,10 @@ body {
   .about_bottom .text_box {
     width: 87.2%;
     margin-left: 6.4%;
-    font-size: 40px;
-    color: #172b4d;
-    font-weight: 700;
-    line-height: 52px;
+    font-size: 1rem;
+    color: #f1f6f9;
+    font-weight: 400;
+    line-height: 24px;
     text-align: center;
   }
 
@@ -583,8 +596,9 @@ body {
   .contactForm input {
     width: 100%;
     height: 48px;
-    border: 1px solid #d0d9d4;
+    border: 1px solid #394867;
     border-radius: 4px;
+    color: #394867;
   }
 
   ::placeholder {
@@ -601,10 +615,10 @@ body {
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
-    color: #42526e;
+    color: #394867;
     padding-top: 12px;
     padding-left: 12px;
-    border: 1px solid #60c095;
+    border: 1px solid #394867;
     border-radius: 4px;
   }
 
@@ -613,13 +627,14 @@ body {
     border: none;
     margin-left: 30.27%;
     height: 48px;
-    background-color: #008552;
+    background: none;
     border-radius: 4px;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 1rem;
     line-height: 24px;
     text-align: center;
-    color: #fff;
+    color: #f1f6f9;
+    border: 1px solid #ff6000;
   }
 
   .about_bottom ul li button:hover {
@@ -628,7 +643,7 @@ body {
   }
 
   .about_bottom ul li button:active {
-    background-color: #008552;
+    background-color: #ff6000;
   }
 
   #name,
@@ -639,11 +654,11 @@ body {
 
   .about_bottom .my_email {
     margin-top: 31px;
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 32px;
+    line-height: 24px;
     text-align: center;
-    color: #42526e;
+    color: #f1f6f9;
   }
 
   .end_bar {
@@ -651,7 +666,7 @@ body {
     height: 4px;
     margin: 32px auto 10px auto;
     border-radius: 2px;
-    background-color: black;
+    background-color: #ff6000;
   }
 }
 

@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=inter' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/4a3fcfc5e4.js" crossorigin="anonymous"></script> 
     <link rel="stylesheet" href="./style.css">
-    <title>Software Developer Portfolio Christian Momo</title>
+    <title>Portfolio Christian Momo</title>
 </head>
 <body class="flex-column">
     <div id="popupWindow" class="popupWindow">
@@ -19,15 +20,15 @@
     <div id = 'headerHeadlineBox' class ="header_headline_container flex-column">
         <header class="flex-row">
             <div class="logo-container">
-                <h1><a href="#"><img src="./photo.png" alt="logo"></a></h1>
+                <img src="./photo.png" alt="logo">
             </div>
             <nav>
                 <div id="openCloseMobileMenuButton" class="openCloseMobileMenuButton">
-                   <img src="./Icons/Menu.svg" alt="mobile version open menu" id="openMobileMenu">
-                   <img src="./Icons/closeMobileMenu.svg" alt="mobile version close menu" id="closeMobileMenu">
+                    <i class="fa-solid fa-bars" id="openMobileMenu"></i>
+                   <i class="fa-solid fa-xmark" id="closeMobileMenu"></i>
                 </div>
                 <ul id="navMenu" class="navMenu flex-column">
-                    <li><a href="#cardWorks" class="navMenuLink">Portfolio</a></li>
+                    <li><a href="#recentWorks" class="navMenuLink">Portfolio</a></li>
                     <li><a href="#aboutMe" class="navMenuLink">About</a></li>
                     <li><a href="#contactMe" class="navMenuLink">Contact</a></li>
                 </ul>
@@ -36,23 +37,23 @@
         <!-- Headline section start -->
         <section id="headLine" class="headline flex-column">
             <div class="welcome_text">
-                <h1 class="mobile_version">Hey There.<br> I'm Christian.<br><span>I’m a software developer</h1></span> <!-- For mobile version -->
-                <h1 class="desktop_version">Hey There.I'm Christian.<br><span>I’m a software developer</h1></span>  <!-- For desktop version version -->
+                <h1 class="mobile_version"><span class = "hi">Hi, my name is</span><br>Christian Momo<br><span class = "qualification">I’m a full stack developer</h1></span> <!-- For mobile version -->
+                <h1 class="desktop_version"><span>Hi, my name is</span> Christian Momo.<br><span>I’m a full-stack developer</h1></span>  <!-- For desktop version version -->
             </div>
             <div class="introduction_text">
-                <p class="">I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded,<br> don’t hesitate to contact me.</p>
+                <p class="">I can help you build a fully scalable application, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
             </div>
             <div class="social_media_icons flex-row">
                 <ul class="flex-row">
-                    <li><a href="https://twitter.com/Momo_yde"><img src="Icons/twitter.svg" alt="twitter icon"></a></li>
-                    <li><a href="https://www.linkedin.com/in/christian-momo/"><img src="Icons/Linkedin.svg" alt="linkedin icon"></a></li>
-                    <li><a href=""><img src="Icons/medium.svg" alt="medium icon"></a></li>
-                    <li><a href="https://github.com/Momo-87"><img src="Icons/github.svg" alt="github icon"></a></li>
-                    <li><a href=""><img src="Icons/angellist.svg" alt="angellist icon"></a></li>
+                    <li><a href="https://twitter.com/Momo_yde"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/christian-momo/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="https://github.com/Momo-87"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.facebook.com/romarik.momo/"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-angellist"></i></a></li>
                 </ul>
             </div>
             <div class="action">
-                <a href="#" class="icon"><img src="./Icons/Down.svg" alt="action button"></a>
+                <a href="#recentWorks" class="icon"><i class="fa-solid fa-angle-down"></i></a>
             </div>
         </section>
         <!--Headline section end-->
@@ -70,41 +71,46 @@
     <section id="aboutMe" class="about_me flex-column">
         <div class="about_me_text flex-column">
             <h2 class="about_primary_text">About me</h2>
-            <div class="about_supporting-text">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,<br> don’t hesitate to contact me.</div>
+            <div class="indicator"></div>
+            <div class="about_supporting-text">I can help you build a fully scalable application, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</div>
             <div class="resume_button button"><a href="">Get my resume</a></div>
         </div>
         <div class="about_cards">
             <ul class="about_card_list flex-column">
                 <li class="card_list">
-                    <div class="card_list_icon flex-row"><img src="Icons/icon-languages.svg" alt="languages icon"></div>
+                    <div class="card_list_icon flex-row"><img src="Icons/icon-languages.png" alt="languages icon"></div>
                     <div class="about_card_title">Languages</div>
                     <ul class="about_card_tags flex-row">
-                        <li>JavaScript</li>
-                        <li>Ruby</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
+                        <li class = "flex-column"><img src="Icons/javascript.svg" alt="JavaScript"><h3>JavaScript</h3></li>
+                        <li class = "flex-column"><img src="Icons/python.svg" alt="python"><h3>Python</h3></li>
+                        <li class = "flex-column"><img src="Icons/php.png" alt="PHP"><h3>PHP</h3></li>
+                        <li class = "flex-column"><img src="Icons/ruby.svg" alt="Ruby"><h3>Ruby</h3></li>
+                        <li class = "flex-column"><img src="Icons/html.svg" alt="Html"><h3>HTML</h3></li>
+                        <li class = "flex-column"><img src="Icons/css.svg" alt="CSS"><h3>CSS</h3></li>
+                        <li class = "flex-column"><img src="Icons/sass.svg" alt="SASS"><h3>SASS</h3></li>
                     </ul>
                 </li>
                 <li class="card_list">
-                    <div class="card_list_icon flex-row"><img src="Icons/icon-frameworks.svg" alt="frameworks icon"></div>
+                    <div class="card_list_icon flex-row frameworks"><img src="Icons/frameworks.png" alt="frameworks icon"></div>
                     <div class="about_card_title">Frameworks</div>
                     <ul class="about_card_tags flex-row">
-                        <li>React.js</li>
-                        <li>Ruby on Rails</li>
-                        <li>RSpec</li>
-                        <li>Capybara</li>
-                        <li>Selenium</li>
+                        <li class = "flex-column"><img src="Icons/react.svg" alt="react"><h3>React</h3></li>
+                        <li class = "flex-column"><img src="Icons/ruby_on_rails.png" alt="Ruby on rails"><h3>Ruby<br> on Rails</h3></li>
+                        <li class = "flex-column"><img src="Icons/Rspec.png" alt="Rspec"><h3>Rspec</h3></li>
+                        <li class = "flex-column"><img src="Icons/capybara.png" alt="capybara"><h3>Capybara</h3></li>
+                        <li class = "flex-column"><img src="Icons/selenium.svg" alt="selenium"><h3>Selenium</h3></li>
+                        <li class = "flex-column"><img src="Icons/bootstrap.svg" alt="Bootstrap"><h3>Bootstrap</h3></li>
                     </ul>
                 </li>
                 <li class="card_list">
-                    <div class="card_list_icon flex-row"><img src="Icons/icon-skills.svg" alt="skills icon"></div>
+                    <div class="card_list_icon flex-row"><img src="Icons/skills.png" alt="skills icon"></div>
                     <div class="about_card_title">Skills</div>
                     <ul class="about_card_tags flex-row">
-                        <li>Database Management</li>
-                        <li>Version Control</li>
-                        <li>CLI</li>
-                        <li>Web Development</li>
-                        <li>API Design</li>
+                        <li class = "flex-column"><img src="Icons/database.png" alt="DataBase"><h3>Database<br> Management</h3></li>
+                        <li class = "flex-column"><img src="Icons/version-control.png" alt="version control"><h3>Version<br> Control</h3></li>
+                        <li class = "flex-column"><img src="Icons/CLI.png" alt="CLI"><h3>CLI</h3></li>
+                        <li class = "flex-column"><img src="Icons/web-development.png" alt="web Development"><h3>Web<br> Development</h3></li>
+                        <li class = "flex-column"><img src="Icons/api.png" alt="api"><h3>API Design</h3></li>
                     </ul>
                 </li>
             </ul>
@@ -133,11 +139,11 @@
             <div class="my_email">momochristian87@gmail.com</div>
             <div class="social_media_icons flex-row">
                 <ul class="flex-row">
-                    <li><a href="https://twitter.com/Momo_yde"><img src="Icons/twitter.svg" alt="twitter icon"></a></li>
-                    <li><a href="https://www.linkedin.com/in/christian-momo/"><img src="Icons/Linkedin.svg" alt="linkedin icon"></a></li>
-                    <li><a href=""><img src="Icons/medium.svg" alt="medium icon"></a></li>
-                    <li><a href="https://github.com/Momo-87"><img src="Icons/github.svg" alt="github icon"></a></li>
-                    <li><a href=""><img src="Icons/angellist.svg" alt="angellist icon"></a></li>
+                    <li><a href="https://twitter.com/Momo_yde"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/christian-momo/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="https://github.com/Momo-87"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.facebook.com/romarik.momo/"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-angellist"></i></a></li>
                 </ul>
             </div>
             <div class="end_bar"></div>

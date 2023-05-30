@@ -207,9 +207,8 @@ const popupTechList = [];
 const popupTechItems = [];
 const popupTechLinks = [];
 
-const closeMobilePopupWindow = document.createElement('img');
-closeMobilePopupWindow.src = './Icons/closePopup.png';
-closeMobilePopupWindow.alt = 'close popup';
+const closeMobilePopupWindow = document.createElement('i');
+closeMobilePopupWindow.classList.add('fa-solid', 'fa-circle-xmark');
 
 // popupWindowContent.append(closeMobilePopupWindow);
 
