@@ -716,7 +716,6 @@ body {
   }
 
   header {
-    position: static;
     height: 72px;
     margin-top: 0;
     background: none;
