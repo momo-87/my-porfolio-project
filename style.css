@@ -45,6 +45,7 @@ body {
     width: 10%;
     font-size: 1.5rem;
   }
+
   header {
     position: fixed;
     width: 100%;
@@ -185,11 +186,11 @@ body {
   .desktop_social_media_icons ul {
     justify-content: space-around;
     gap: 15%;
-    }
+  }
 
-    i.fa-brands {
-      color: #f1f6f9;
-    }
+  i.fa-brands {
+    color: #f1f6f9;
+  }
 
   .desktop_social_media_icons {
     display: none;
@@ -343,19 +344,11 @@ body {
     border: 2px solid #9ba4b5;
   }
 
-
-
-
   .projectTextBox .projectButton {
     width: 100%;
   }
 
-  /* .projectButton a:hover {
-    border-radius: 5px;
-    width: 105%;
-  } */
-
-  .projectTextBox .projectButton a {
+  a.project-link {
     display: inline-block;
     width: 40%;
     height: 48px;
@@ -370,7 +363,7 @@ body {
     color: #f1f6f9;
   }
 
-  .projectTextBox .projectButton a:hover {
+  a.project-link:hover {
     border: 3px solid #9ba4b5;
   }
 
@@ -446,8 +439,8 @@ body {
     border-radius: 5px;
   }
 
-  .popupButtonsBox .popupLiveButtonBox a,
-  .popupButtonsBox .popupSourceButtonBox a {
+  a.live-link,
+  a.source-link {
     font-size: 1rem;
     font-weight: 500;
     line-height: 24px;
@@ -574,11 +567,9 @@ body {
     text-align: center;
   }
 
-  .about_card_tags li img {
+  .about_card_list .card_list .about_card_tags li img {
     width: 50%;
   }
-
-
 
   .about_bottom {
     margin-top: 54px;
@@ -636,7 +627,6 @@ body {
 
   .about_bottom ul li button {
     width: 39.4%;
-    border: none;
     margin-left: 30.27%;
     height: 48px;
     background: none;

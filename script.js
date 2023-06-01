@@ -183,6 +183,7 @@ for (let i = 0; i < projects.length; i += 1) {
   projectButtons[i] = document.createElement('div');
   projectButtons[i].classList.add('projectButton', 'button');
   projectButtonlinks[i] = document.createElement('a');
+  projectButtonlinks[i].className = 'project-link';
   projectButtonlinks[i].href = '#';
   projectButtonlinks[i].innerHTML = 'See Project';
   projectButtons[i].appendChild(projectButtonlinks[i]);
@@ -266,6 +267,7 @@ for (let i = 0; i < projects.length; i += 1) {
   popupLiveButtonBoxs[i] = document.createElement('div');
   popupLiveButtonBoxs[i].classList.add('popupLiveButtonBox', 'flex-row');
   popupLiveLinks[i] = document.createElement('a');
+  popupLiveLinks[i].className = 'live-link';
   popupLiveLinks[i].href = projects[i].liveVersion;
   popupLiveLinks[i].target = '_blank';
   popupLiveLinks[i].rel = 'noopener noreferrer';
@@ -283,6 +285,7 @@ for (let i = 0; i < projects.length; i += 1) {
   popupSourceButtonBoxs[i] = document.createElement('div');
   popupSourceButtonBoxs[i].classList.add('popupSourceButtonBox', 'flex-row');
   popupSourceLinks[i] = document.createElement('a');
+  popupSourceLinks[i].className = 'source-link';
   popupSourceLinks[i].href = projects[i].codeSource;
   popupSourceLinks[i].target = '_blank';
   popupSourceLinks[i].rel = 'noopener noreferrer';
