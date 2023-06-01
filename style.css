@@ -80,7 +80,7 @@ body {
     padding-left: 50%;
     margin-left: -30.9%;
     height: 738px;
-    background-color: #000000;
+    background: url('./assets/mobile-background.jpg');
     position: relative;
     z-index: 5;
   }
@@ -338,14 +338,22 @@ body {
     border-radius: 4px;
   }
 
+  .projectTextBox .projectTechList a:hover,
+  .popupWindowContent .projectTechList a:hover {
+    border: 2px solid #9ba4b5;
+  }
+
+
+
+
   .projectTextBox .projectButton {
     width: 100%;
   }
 
-  .projectButton a:hover {
-    box-shadow: 0 10px 16px 10px rgba(54, 179, 127, 0.5);
+  /* .projectButton a:hover {
     border-radius: 5px;
-  }
+    width: 105%;
+  } */
 
   .projectTextBox .projectButton a {
     display: inline-block;
@@ -355,11 +363,15 @@ body {
     border: 1px solid #ff6000;
     border-radius: 4px;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 1rem;
     line-height: 24px;
     text-align: center;
     padding-top: 10px;
     color: #f1f6f9;
+  }
+
+  .projectTextBox .projectButton a:hover {
+    border: 3px solid #9ba4b5;
   }
 
   /* popup details window content start */
@@ -430,7 +442,7 @@ body {
 
   .popupLiveButtonBox:hover,
   .popupSourceButtonBox:hover {
-    box-shadow: 0 10px 16px 10px rgba(54, 179, 127, 0.5);
+    border: 3px solid #9ba4b5;
     border-radius: 5px;
   }
 
@@ -497,7 +509,7 @@ body {
   }
 
   .about_me_text .resume_button a:hover {
-    box-shadow: 0 10px 16px 10px rgba(54, 179, 127, 0.5);
+    border: 3px solid #9ba4b5;
     border-radius: 5px;
   }
 
@@ -638,7 +650,7 @@ body {
   }
 
   .about_bottom ul li button:hover {
-    box-shadow: 0 10px 16px 10px rgba(54, 179, 127, 0.5);
+    border: 3px solid #9ba4b5;
     border-radius: 5px;
   }
 
@@ -713,10 +725,6 @@ body {
     flex-wrap: wrap;
   }
 
-  .header_headline_container {
-    background: url('./images/Header-llustration-desktop.png') 50% top no-repeat;
-  }
-
   header {
     position: static;
     height: 72px;
@@ -729,8 +737,6 @@ body {
     height: 50px;
     margin-top: 16px;
     margin-left: 10%;
-
-    /* border: 3px solid #172b4d; */
     border-radius: 50%;
   }
 
@@ -757,12 +763,12 @@ body {
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
-    color: #3a4a42;
+    color: #f1f6f9;
   }
 
   .navMenu li a:hover {
-    color: rgb(54, 179, 126);
-    border-bottom: 2px solid rgb(54, 179, 126);
+    color: #ff6000;
+    border-bottom: 2px solid #ff6000;
     padding-bottom: 10px;
   }
 
@@ -783,7 +789,7 @@ body {
 
   .welcome_text {
     height: auto;
-    margin-top: 160px;
+    margin-top: 100px;
   }
 
   .welcome_text .mobile_version {
@@ -792,15 +798,20 @@ body {
 
   .welcome_text .desktop_version {
     display: inline-block;
-    font-size: 48px;
+    font-size: 3rem;
     line-height: 60px;
     font-weight: 800;
+  }
+
+  .welcome_text h1 span.hi {
+    font-size: 1rem;
   }
 
   .introduction_text {
     width: 100%;
     line-height: 32px;
     margin-left: 0;
+    text-align: center;
   }
 
   .social_media_icons,
@@ -811,7 +822,7 @@ body {
   .action {
     height: 40px;
     margin-top: 35px;
-    margin-bottom: 184px;
+    margin-bottom: 30px;
   }
 
   /* Desktop version headline section end */
@@ -819,11 +830,11 @@ body {
   /* Desktop version Recent works section start */
   .recent_works {
     width: 81.32%;
-    margin: 80px 9.3% 0 9.3%;
+    margin: 30px 9.3% 0 9.3%;
   }
 
   .recent_work_primary_text {
-    margin-top: 80px;
+    margin-top: 30px;
   }
 
   #break_point::before {
@@ -862,8 +873,6 @@ body {
 
   /* Desktop version About me section start */
   .about_me {
-    background: url('./images/illustration-1-contact-form-desktop.jpg') 0 1000px no-repeat, url('./images/illustration-2-contact-form-desktop.jpg') 274px 1150px no-repeat, url('./images/contact\ form-illustratoin-3-desktop.jpg') right 850px no-repeat, url('./images/illustration-about\ me-1-desktop.jpg') right 0 no-repeat, url('./images/illustration-about-me-2-desktop.jpg') left 155px no-repeat;
-    background-size: 194px 352px, 131px 106px, 222px 494px, 224px 245px, 236px 128px;
     padding-bottom: 238px;
   }
 
@@ -871,6 +880,10 @@ body {
     align-items: center;
     width: 64%;
     margin: 64px auto 0 auto;
+  }
+
+  .about_supporting-text {
+    text-align: center;
   }
 
   .about_me .about_me_text .resume_button a {
@@ -911,8 +924,9 @@ body {
 
   .about_bottom .text_box {
     display: flex;
-    font-size: 30px;
+    font-size: 1.3rem;
     width: 100%;
+    line-height: 30px;
     margin-top: 80px;
     margin-left: 0;
     align-items: center;
@@ -960,7 +974,7 @@ body {
     width: 100%;
     height: 1px;
     margin: 0 auto 10px auto;
-    background-color: #dfe1e6;
+    background-color: #ff6000;
   }
 
   .about_bottom .social_media_icons {
