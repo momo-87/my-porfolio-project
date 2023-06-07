@@ -24,7 +24,7 @@ for (let i = 0; i < navMenuLink.length; i += 1) {
 // Portfolio project details popup window start
 const projects = [
   {
-    name: 'Restau',
+    name: 'Restaurant',
     description: '<p>This project is about building an web application based on an external API.</p>',
     image: './images/card1.png',
     technologies: [{ name: 'JavaScript', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
@@ -52,9 +52,23 @@ const projects = [
   },
 
   {
+    name: 'Math-Magician',
+    description: '<p>Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations; Read a random math-related quote</p>',
+    image: './images/card3.png',
+    technologies: [{ name: 'React', url: 'https://react.dev/' },
+      { name: 'SASS', url: 'https://sass-lang.com/' },
+      { name: 'CSS', url: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
+      { name: 'HTML', url: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
+      { name: 'GitHub', url: 'https://github.com/' },
+    ],
+    liveVersion: 'https://math-magician-7koh.onrender.com/',
+    codeSource: 'https://github.com/momo-87/math-magicians.git',
+  },
+
+  {
     name: 'Awesome Books',
     description: '<p>Small web application used to add, list and delete books from the local storage. User adds a book by providing the title and the author and can retrieve it later. Build with JavaScript</p>',
-    image: './images/card3.png',
+    image: './images/card4.png',
     technologies: [{ name: 'JavaScript', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
       { name: 'CSS', url: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
       { name: 'HTML', url: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
@@ -67,7 +81,7 @@ const projects = [
   {
     name: 'To-Do list',
     description: '<p>A simple application to create and display a fully editable To-Do list. The user can change the status of a task to completed by clicking on the corresponding check-box. Build with JavaScript.</p>',
-    image: './images/card4.png',
+    image: './images/card5.png',
     technologies: [{ name: 'JavaScript', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
       { name: 'CSS', url: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
       { name: 'HTML', url: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
