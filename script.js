@@ -28,7 +28,7 @@ const projects = [
     description: '<p>Air Metrics is a React Redux web application that displays air quality data. The data are provided by external API (AirVisualAPI: https://api-docs.iqair.com/) and the user can display air quality and weather data from different areas around the world by using a search engine.</p>',
     image: './images/card1.png',
     technologies: [{ name: 'React', url: 'https://react.dev/' },
-    { name: 'Redux', url: 'https://redux.js.org/' },
+      { name: 'Redux', url: 'https://redux.js.org/' },
       { name: 'JavaScript', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
       { name: 'SASS', url: 'https://sass-lang.com/' },
       { name: 'Jest', url: 'https://jestjs.io/' },
