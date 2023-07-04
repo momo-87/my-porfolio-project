@@ -82,7 +82,7 @@ const projects = [
   {
     name: 'Math-Magician',
     description: '<p>Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations; Read a random math-related quote</p>',
-    image: './images/card4.png',
+    image: './images/card5.png',
     technologies: [{ name: 'React', url: 'https://react.dev/' },
       { name: 'SASS', url: 'https://sass-lang.com/' },
       { name: 'CSS', url: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
@@ -96,7 +96,7 @@ const projects = [
   {
     name: 'Awesome Books',
     description: '<p>Small web application used to add, list and delete books from the local storage. User adds a book by providing the title and the author and can retrieve it later. Build with JavaScript</p>',
-    image: './images/card5.png',
+    image: './images/card6.png',
     technologies: [{ name: 'JavaScript', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
       { name: 'CSS', url: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
       { name: 'HTML', url: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
