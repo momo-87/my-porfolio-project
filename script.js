@@ -39,7 +39,7 @@ const projects = [
   },
   {
     name: "Space Traveler's Hub",
-    description: '<p>Awesome React-based web application that allow users to book rockets and join selected space missions. It uses real live data from SpaceX API. Built in remote pair-programming context in collaboration with <a class="collaborator" href="https://github.com/lordksix">Wladimir Pasquel.</a></p>',
+    description: '<p>Awesome React-based web application that allows users to book rockets and join selected space missions. It uses real live data from SpaceX API. Built in remote pair-programming context in collaboration with <a class="collaborator" href="https://github.com/lordksix">Wladimir Pasquel.</a></p>',
     image: './images/card2.png',
     technologies: [{ name: 'React', url: 'https://react.dev/' },
       { name: 'Redux', url: 'https://redux.js.org/' },
