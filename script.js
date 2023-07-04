@@ -25,7 +25,7 @@ for (let i = 0; i < navMenuLink.length; i += 1) {
 const projects = [
   {
     name: 'Air Metrics Web APP',
-    description: '<p>Air Metrics is a React Redux web application that displays air quality data. The data are provided by external API (AirVisualAPI: https://api-docs.iqair.com/) and the user can display air quality and weather data from different areas around the world by using a search engine.</p>',
+    description: '<p>Air Metrics is a React Redux web application that displays air quality data. The data are provided by external API and the user can display air quality and weather data from different areas around the world by using a search engine.</p>',
     image: './images/card1.png',
     technologies: [{ name: 'React', url: 'https://react.dev/' },
       { name: 'Redux', url: 'https://redux.js.org/' },
@@ -38,9 +38,23 @@ const projects = [
     codeSource: 'https://github.com/momo-87/air-metrics-webapp.git',
   },
   {
+    name: "Space Traveler's Hub",
+    description: '<p>Awesome React-based web application that allow users to book rockets and join selected space missions. It uses real live data from SpaceX API. Built in remote pair-programming context in collaboration with <a class="collaborator" href="https://github.com/lordksix">Wladimir Pasquel.</a></p>',
+    image: './images/card2.png',
+    technologies: [{ name: 'React', url: 'https://react.dev/' },
+      { name: 'Redux', url: 'https://redux.js.org/' },
+      { name: 'JavaScript', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
+      { name: 'SASS', url: 'https://sass-lang.com/' },
+      { name: 'Jest', url: 'https://jestjs.io/' },
+      { name: 'GitHub', url: 'https://github.com/' },
+    ],
+    liveVersion: 'https://space-travelers-hub-kappa.vercel.app/',
+    codeSource: 'https://github.com/lordksix/space-travelers-hub.git',
+  },
+  {
     name: 'Restaurant',
     description: '<p>This project is about building an web application based on an external API.</p>',
-    image: './images/card2.png',
+    image: './images/card3.png',
     technologies: [{ name: 'JavaScript', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
       { name: 'Webpack', url: 'https://webpack.js.org/guides/getting-started/#basic-setup' },
       { name: 'CSS', url: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
@@ -54,7 +68,7 @@ const projects = [
   {
     name: 'Meeting Booker',
     description: '<p>This project simulates a conference meeting website for fictitious Educational Robotics Meeting in Africa 2023.</p>',
-    image: './images/card3.jpeg',
+    image: './images/card4.jpeg',
     technologies: [{ name: 'JavaScript', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
       { name: 'Sass', url: 'https://sass-lang.com/' },
       { name: 'CSS', url: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
@@ -90,20 +104,6 @@ const projects = [
     ],
     liveVersion: 'https://momo-87.github.io/awesome-books-with-ES6/',
     codeSource: 'https://github.com/momo-87/awesome-books-with-ES6.git',
-  },
-
-  {
-    name: 'To-Do list',
-    description: '<p>A simple application to create and display a fully editable To-Do list. The user can change the status of a task to completed by clicking on the corresponding check-box. Build with JavaScript.</p>',
-    image: './images/card6.png',
-    technologies: [{ name: 'JavaScript', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
-      { name: 'CSS', url: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
-      { name: 'HTML', url: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
-      { name: 'Webpack', url: 'https://webpack.js.org/' },
-      { name: 'GitHub', url: 'https://github.com/' },
-    ],
-    liveVersion: 'https://momo-87.github.io/to-do-list/',
-    codeSource: 'https://github.com/momo-87/to-do-list.git',
   },
 ];
 

@@ -40,6 +40,11 @@ body {
 
 /* Mobile version start */
 @media only screen and (min-width: 320px) {
+  a.collaborator {
+    color: #ff6000;
+    font-weight: bold;
+  }
+
   .popupWindowContent i.fa-circle-xmark {
     margin-left: 90%;
     width: 10%;
