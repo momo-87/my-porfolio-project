@@ -24,6 +24,21 @@ for (let i = 0; i < navMenuLink.length; i += 1) {
 // Portfolio project details popup window start
 const projects = [
   {
+    name: 'i-Budget Web APP',
+    description: '<p>i-budget is a mobile web application where you can manage your budget. You have a list of transactions associated with a category, so that you can see how much money you spent and on what.</p>',
+    image: './images/card7.png',
+    technologies: [{ name: 'Ruby', url: 'https://www.ruby-lang.org/en/' },
+      { name: 'Rails', url: 'https://guides.rubyonrails.org/' },
+      { name: 'PostgreSQL', url: 'https://www.postgresql.org/' },
+      { name: 'Tailwindcss', url: 'https://tailwindcss.com/' },
+      { name: 'Rspec', url: 'https://rspec.info/' },
+      { name: 'Capybara', url: 'https://teamcapybara.github.io/capybara/' },
+      { name: 'GitHub', url: 'https://github.com/' },
+    ],
+    liveVersion: 'https://ibudget-wct3.onrender.com/',
+    codeSource: 'https://github.com/momo-87/i-budget.git',
+  },
+  {
     name: 'Air Metrics Web APP',
     description: '<p>Air Metrics is a React Redux web application that displays air quality data. The data are provided by external API and the user can display air quality and weather data from different areas around the world by using a search engine.</p>',
     image: './images/card1.png',
