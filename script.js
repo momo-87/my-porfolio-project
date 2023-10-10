@@ -24,6 +24,24 @@ for (let i = 0; i < navMenuLink.length; i += 1) {
 // Portfolio project details popup window start
 const projects = [
   {
+    name: '@doctors',
+    description: '<p>@doctors is a Full-stack web application that allows a user to book an appointment with a doctor. The Front-end is built using React JS and Redux, and the Back-end API web service is built with Ruby on Rails. Built in remote pair-programming context in collaboration with <a class="collaborator" href="https://github.com/abel-tefera">Abel Belay</a> | <a class="collaborator" href="https://github.com/ragangithub">Ragan</a> | <a class="collaborator" href="https://github.com/lenkon">K Inoulen Shanongba</a></p>',
+    image: './images/@doctors.png',
+    technologies: [{ name: 'React', url: 'https://react.dev/' },
+      { name: 'Redux', url: 'https://redux.js.org/' },
+      { name: 'JavaScript', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
+      { name: 'Ruby', url: 'https://www.ruby-lang.org/en/' },
+      { name: 'Rails', url: 'https://guides.rubyonrails.org/' },
+      { name: 'PostgreSQL', url: 'https://www.postgresql.org/' },
+      { name: 'Tailwindcss', url: 'https://tailwindcss.com/' },
+      { name: 'Rspec', url: 'https://rspec.info/' },
+      { name: 'Capybara', url: 'https://teamcapybara.github.io/capybara/' },
+      { name: 'GitHub', url: 'https://github.com/' },
+    ],
+    liveVersion: 'https://doctors.abeltb.xyz/',
+    codeSource: 'https://github.com/momo-87/doctor-appointment-front-end.git',
+  },
+  {
     name: 'i-Budget Web APP',
     description: '<p>i-budget is a mobile web application where you can manage your budget. You have a list of transactions associated with a category, so that you can see how much money you spent and on what.</p>',
     image: './images/card7.png',
@@ -41,7 +59,7 @@ const projects = [
   {
     name: 'Air Metrics Web APP',
     description: '<p>Air Metrics is a React Redux web application that displays air quality data. The data are provided by external API and the user can display air quality and weather data from different areas around the world by using a search engine.</p>',
-    image: './images/card1.png',
+    image: './images/airmetrics.png',
     technologies: [{ name: 'React', url: 'https://react.dev/' },
       { name: 'Redux', url: 'https://redux.js.org/' },
       { name: 'JavaScript', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
@@ -55,7 +73,7 @@ const projects = [
   {
     name: "Space Traveler's Hub",
     description: '<p>Awesome React-based web application that allows users to book rockets and join selected space missions. It uses real live data from SpaceX API. Built in remote pair-programming context in collaboration with <a class="collaborator" href="https://github.com/lordksix">Wladimir Pasquel.</a></p>',
-    image: './images/card2.png',
+    image: './images/space.png',
     technologies: [{ name: 'React', url: 'https://react.dev/' },
       { name: 'Redux', url: 'https://redux.js.org/' },
       { name: 'JavaScript', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
@@ -69,7 +87,7 @@ const projects = [
   {
     name: 'Restaurant',
     description: '<p>This project is about building an web application based on an external API.</p>',
-    image: './images/card3.png',
+    image: './images/restau.png',
     technologies: [{ name: 'JavaScript', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
       { name: 'Webpack', url: 'https://webpack.js.org/guides/getting-started/#basic-setup' },
       { name: 'CSS', url: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
@@ -97,7 +115,7 @@ const projects = [
   {
     name: 'Math-Magician',
     description: '<p>Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations; Read a random math-related quote</p>',
-    image: './images/card5.png',
+    image: './images/maths.png',
     technologies: [{ name: 'React', url: 'https://react.dev/' },
       { name: 'SASS', url: 'https://sass-lang.com/' },
       { name: 'CSS', url: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
@@ -106,19 +124,6 @@ const projects = [
     ],
     liveVersion: 'https://math-magician-7koh.onrender.com/',
     codeSource: 'https://github.com/momo-87/math-magicians.git',
-  },
-
-  {
-    name: 'Awesome Books',
-    description: '<p>Small web application used to add, list and delete books from the local storage. User adds a book by providing the title and the author and can retrieve it later. Build with JavaScript</p>',
-    image: './images/card6.png',
-    technologies: [{ name: 'JavaScript', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
-      { name: 'CSS', url: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
-      { name: 'HTML', url: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
-      { name: 'GitHub', url: 'https://github.com/' },
-    ],
-    liveVersion: 'https://momo-87.github.io/awesome-books-with-ES6/',
-    codeSource: 'https://github.com/momo-87/awesome-books-with-ES6.git',
   },
 ];
 
