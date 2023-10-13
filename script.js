@@ -82,7 +82,7 @@ const projects = [
       { name: 'GitHub', url: 'https://github.com/' },
     ],
     liveVersion: 'https://space-travelers-hub-kappa.vercel.app/',
-    codeSource: 'https://github.com/lordksix/space-travelers-hub.git',
+    codeSource: 'https://github.com/momo-87/space-travelers-hub.git',
   },
   {
     name: 'Restaurant',
