@@ -101,7 +101,7 @@ const projects = [
   {
     name: 'Meeting Booker',
     description: '<p>This project simulates a conference meeting website for fictitious Educational Robotics Meeting in Africa 2023.</p>',
-    image: './images/card4.jpeg',
+    image: './images/meeting.png',
     technologies: [{ name: 'JavaScript', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
       { name: 'Sass', url: 'https://sass-lang.com/' },
       { name: 'CSS', url: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
