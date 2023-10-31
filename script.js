@@ -39,7 +39,7 @@ const projects = [
       { name: 'GitHub', url: 'https://github.com/' },
     ],
     liveVersion: 'https://doctors.abeltb.xyz/',
-    codeSource: 'https://github.com/momo-87/doctor-appointment-front-end.git',
+    codeSource: 'https://github.com/abel-tefera/doctor-appointment-front-end',
   },
   {
     name: 'i-Budget Web APP',
