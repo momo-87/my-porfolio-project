@@ -81,7 +81,7 @@ const projects = [
       { name: 'Jest', url: 'https://jestjs.io/' },
       { name: 'GitHub', url: 'https://github.com/' },
     ],
-    liveVersion: 'https://space-travelers-hub-kappa.vercel.app/',
+    liveVersion: 'https://github.com/lordksix/space-travelers-hub.git',
     codeSource: 'https://github.com/momo-87/space-travelers-hub.git',
   },
   {
