@@ -85,8 +85,8 @@ const projects = [
     codeSource: 'https://github.com/lordksix/space-travelers-hub.git',
   },
   {
-    name: 'Restaurant',
-    description: '<p>This project is about building an web application based on an external API.</p>',
+    name: 'Culinary Explorer',
+    description: "<p>My JavaScript capstone journey was a dynamic exploration, transforming a cooking API into an interactive web app. Embracing ES6 elegance and modules, I navigated the code with Gitflow finesse. Callbacks and promises orchestrated seamless interactions, while Webpack orchestrated the symphony of modules. AAA-pattern unit tests were my code guardians, ensuring reliability. With API wizardry, JSON mastery, and asynchronous prowess, I created a flavorful user experience. Beyond the code, I ventured into Git conflict resolution and collaborative code reviews, a testament to both technical and teamwork proficiency. The Culinary Explorer is more than an app; it's a journey through JavaScript mastery.</p>",
     image: './images/restau.png',
     technologies: [{ name: 'JavaScript', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
       { name: 'Webpack', url: 'https://webpack.js.org/guides/getting-started/#basic-setup' },
