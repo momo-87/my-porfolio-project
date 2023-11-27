@@ -99,8 +99,8 @@ const projects = [
   },
 
   {
-    name: 'Meeting Booker',
-    description: '<p>This project simulates a conference meeting website for fictitious Educational Robotics Meeting in Africa 2023.</p>',
+    name: 'EduCon 2023',
+    description: "<p>Navigating EduCon 2023, I honed UI proficiency—medium-fidelity wireframes brought concepts to life; semantic HTML, CSS and SCSS finesse adorned visuals. Flexbox and media queries ensured responsive design, adapting seamlessly to diverse screens. GitHub Pages showcased deployment mastery. As JavaScript virtuoso, I orchestrated interactive elements, using objects for efficient data management. This simulation isn't just a website—it's a symphony of skills, a testament to my journey in crafting compelling, adaptable, and engaging front-end interfaces.</p>",
     image: './images/meeting.png',
     technologies: [{ name: 'JavaScript', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
       { name: 'Sass', url: 'https://sass-lang.com/' },
