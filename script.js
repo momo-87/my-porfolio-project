@@ -58,7 +58,7 @@ const projects = [
   },
   {
     name: 'Air Metrics Web APP',
-    description: '<p>Air Metrics is a React Redux web application that displays air quality data. The data are provided by external API and the user can display air quality and weather data from different areas around the world by using a search engine.</p>',
+    description: "<p>In the realm of React and Redux, I sculpted Air Metrics—a dynamic web app unveiling global air quality data. Guided by React's orchestration, I seamlessly integrated components, wielded React Router for smooth navigation, and married React with Redux for state mastery. Events danced harmoniously, styled with finesse. Rigorous integration tests validated the app's robustness. Leveraging React's lifecycle, the Air Metrics experience breathed with vitality. Through meticulous adherence to best practices, this project transcends beyond data visualization; it's a symphony of React mastery and user-centric design.</p>",
     image: './images/airmetrics.png',
     technologies: [{ name: 'React', url: 'https://react.dev/' },
       { name: 'Redux', url: 'https://redux.js.org/' },
