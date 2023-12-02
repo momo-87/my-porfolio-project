@@ -928,17 +928,72 @@ body {
     animation: abtext 3s;
   }
 
-  @keyframes abtext {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
 
-    to {
-      margin-left: 0;
-      width: 100%;
-    }
+
+
+
+
+ /* @-webkit-keyframes abtext {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
   }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+} */
+@keyframes abtext {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-12px, 12px);
+            transform: translate(-12px, 12px);
+  }
+  40% {
+    -webkit-transform: translate(-12px, -12px);
+            transform: translate(-12px, -12px);
+  }
+  60% {
+    -webkit-transform: translate(12px, 12px);
+            transform: translate(12px, 12px);
+  }
+  80% {
+    -webkit-transform: translate(12px, -12px);
+            transform: translate(12px, -12px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+
+
+
+
+
+
+
+
 
   .contactForm {
     width: 100%;
