@@ -169,7 +169,24 @@ body {
 
   .welcome_text h1 span.qualification {
     color: #9ba4b5;
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+
+  /* Text Animation */
+  .hidden {
+    opacity:0;
+  }
+  .console-container {
+    text-align:center;
+    display:inline;
+    color:white;
+    margin:auto;
+  }
+  .console-underscore {
+      display:inline-block;
+    position:relative;
+    top:-0.14em;
+    left:10px;
   }
 
   .introduction_text {
@@ -776,7 +793,7 @@ body {
 
   .headline {
     background-image: none;
-    width: 63.88%;
+    width: 67%;
     margin: 0 auto 90px auto;
     row-gap: 24px;
   }
@@ -792,13 +809,32 @@ body {
 
   .welcome_text .desktop_version {
     display: inline-block;
-    font-size: 3rem;
     line-height: 60px;
     font-weight: 800;
+    font-size: 3rem;
   }
 
   .welcome_text h1 span.hi {
     font-size: 1rem;
+  }
+
+  .welcome_text h1 span.qualification {
+    font-size: 2rem;
+  }
+
+  /* Text Animation */
+  .hidden {
+    opacity:0;
+  }
+  .console-container {
+    text-align:center;
+    display:inline;
+    color:white;
+    margin:auto;
+  }
+  .console-underscore {
+    display:inline-block;
+    position:relative;
   }
 
   .introduction_text {
@@ -806,6 +842,7 @@ body {
     line-height: 32px;
     margin-left: 0;
     text-align: center;
+    font-size: 1.2rem;
   }
 
   .social_media_icons,
@@ -929,67 +966,58 @@ body {
   }
 
 
- /* @-webkit-keyframes abtext {
-  0% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
+  /* @-webkit-keyframes abtext {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    40% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  } */
+  @keyframes abtext {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-12px, 12px);
+              transform: translate(-12px, 12px);
+    }
+    40% {
+      -webkit-transform: translate(-12px, -12px);
+              transform: translate(-12px, -12px);
+    }
+    60% {
+      -webkit-transform: translate(12px, 12px);
+              transform: translate(12px, 12px);
+    }
+    80% {
+      -webkit-transform: translate(12px, -12px);
+              transform: translate(12px, -12px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
   }
-  20% {
-    -webkit-transform: translate(-2px, 2px);
-            transform: translate(-2px, 2px);
-  }
-  40% {
-    -webkit-transform: translate(-2px, -2px);
-            transform: translate(-2px, -2px);
-  }
-  60% {
-    -webkit-transform: translate(2px, 2px);
-            transform: translate(2px, 2px);
-  }
-  80% {
-    -webkit-transform: translate(2px, -2px);
-            transform: translate(2px, -2px);
-  }
-  100% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-} */
-@keyframes abtext {
-  0% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-  20% {
-    -webkit-transform: translate(-12px, 12px);
-            transform: translate(-12px, 12px);
-  }
-  40% {
-    -webkit-transform: translate(-12px, -12px);
-            transform: translate(-12px, -12px);
-  }
-  60% {
-    -webkit-transform: translate(12px, 12px);
-            transform: translate(12px, 12px);
-  }
-  80% {
-    -webkit-transform: translate(12px, -12px);
-            transform: translate(12px, -12px);
-  }
-  100% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-}
-
-
-
-
-
-
-
-
-
 
   .contactForm {
     width: 100%;
