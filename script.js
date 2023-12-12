@@ -395,6 +395,9 @@ const consoleText = (words, id, idMobile, colors) => {
   let visible = true;
   const con = document.getElementById('console');
   const conMobile = document.getElementById('console-mobile');
+
+  const consoleContainers = document.querySelectorAll('.console-container');
+
   let letterCount = 1;
   let x = 1;
   let waiting = false;
@@ -402,6 +405,11 @@ const consoleText = (words, id, idMobile, colors) => {
   const targetMobile = document.getElementById(idMobile);
   target.setAttribute('style', `color:${colors[0]}`);
   targetMobile.setAttribute('style', `color:${colors[0]}`);
+
+  consoleContainers.forEach((div) => {
+    div.setAttribute('style', `color:${colors[0]}`);
+  });
+
   window.setInterval(() => {
     if (letterCount === 0 && waiting === false) {
       waiting = true;
@@ -415,6 +423,11 @@ const consoleText = (words, id, idMobile, colors) => {
         x = 1;
         target.setAttribute('style', `color:${colors[0]}`);
         targetMobile.setAttribute('style', `color:${colors[0]}`);
+
+        consoleContainers.forEach((div) => {
+          div.setAttribute('style', `color:${colors[0]}`);
+        });
+
         letterCount += x;
         waiting = false;
       }, 1000);
