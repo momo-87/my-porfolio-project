@@ -849,6 +849,121 @@ body {
     width: 21.74%;
   }
 
+
+
+
+
+
+
+
+  .ball {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    background-color: rgba(155, 164, 181, 0.2);
+  }
+
+  .ball:hover {
+    background-color: rgba(155, 164, 181, 0);
+    height: 75px;
+    width: 75px;
+    border: 1px solid white;
+  }
+
+  .ball a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  .ball a i {
+    font-size: 1.5em;
+    /* color: #ff6000; */
+  }
+
+  ul.bubble-list li:nth-child(1) {
+    animation: float 5s ease-in-out infinite;
+    position: absolute;
+    top: 200px;
+    left: 10%;
+    /* border: 1px solid white; */
+  }
+
+  ul.bubble-list li:nth-child(6) {
+    animation: float 6s ease-in-out infinite;
+    position: absolute;
+    top: 150px;
+    left: 75%;
+    /* border: 1px solid white; */
+  }
+
+  ul.bubble-list li:nth-child(5) {
+    animation: float 7s ease-in-out infinite;
+    position: absolute;
+    top: 350px;
+    left: 85%;
+    /* border: 1px solid white; */
+  }
+
+  ul.bubble-list li:nth-child(4) {
+    animation: float 8s ease-in-out infinite;
+    position: absolute;
+    top: 500px;
+    left: 80%;
+    /* border: 1px solid white; */
+  }
+
+  ul.bubble-list li:nth-child(2) {
+    animation: float 9s ease-in-out infinite;
+    /* position: absolute;
+    top: 500px;
+    left: 80%; */
+    /* border: 1px solid white; */
+  }
+
+  ul.bubble-list li:nth-child(3) {
+    animation: float 8s ease-in-out infinite;
+    /* position: absolute;
+    top: 500px;
+    left: 80%; */
+    /* border: 1px solid white; */
+  }
+
+  @keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-40px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .action {
     height: 40px;
     margin-top: 35px;
