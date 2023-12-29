@@ -53,7 +53,7 @@ const projects = [
       { name: 'Capybara', url: 'https://teamcapybara.github.io/capybara/' },
       { name: 'GitHub', url: 'https://github.com/' },
     ],
-    liveVersion: 'https://ibudget-wct3.onrender.com/',
+    liveVersion: 'https://i-budget-3d8e9cf57098.herokuapp.com/',
     codeSource: 'https://github.com/momo-87/i-budget.git',
   },
   {
