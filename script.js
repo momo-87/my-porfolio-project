@@ -457,4 +457,6 @@ const consoleText = (words, id, idMobile, colors) => {
     }
   }, 400);
 };
-consoleText(['Full-stack Developer.', 'JavaScript Developer.', 'React Developer.', 'Ruby on Rails Developer.', 'Next.js Developer.', 'Front-end Developer.', 'Back-end Developer.'], 'text', 'text-mobile', ['#9ba4b5', '#f7df1e', '#61dafb', '#CC0000', 'white', '#9ba4b5', '#9ba4b5']);
+consoleText(['Full-stack Developer.', 'JavaScript Developer.', 'React.js Developer.', 'Ruby on Rails Developer.', 'Next.js Developer.'], 'text', 'text-mobile');
+// eslint-disable-next-line max-len
+// consoleText(['Full-stack Developer.', 'JavaScript Developer.', 'React Developer.', 'Ruby on Rails Developer.', 'Next.js Developer.', 'Front-end Developer.', 'Back-end Developer.'], 'text', 'text-mobile', ['#9ba4b5', '#f7df1e', '#61dafb', '#CC0000', 'white', '#9ba4b5', '#9ba4b5']);
