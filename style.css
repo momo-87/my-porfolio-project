@@ -1,3 +1,17 @@
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+:root {
+  --d: 2500ms;
+  --angle: 90deg;
+  --c1: rgba(168, 239, 255, 1);
+  --c2: rgba(168, 239, 255, 0.1);
+}
+
+
 * {
   font-family: 'inter', sans-serif;
   padding: 0;
@@ -159,18 +173,59 @@ body {
     line-height: 40px;
     font-weight: 700;
     font-size: 2rem;
+    background-clip: text;
+    background-image: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
+    color: #000119 !important;
+    letter-spacing: calc(1em / 8);
+    padding: calc(calc(1em / 16) / 2);
+    -webkit-text-stroke-color: transparent;
+    -webkit-text-stroke-width: calc(1em / 16);
+
+
   }
 
   .welcome_text h1 span.hi {
-    color: #ff6000;
-    font-size: 0.8rem;
+    color: #ffffff;
+    font-size: 1.2rem !important;
     font-weight: lighter;
+    background-clip: none;
+    background-image: none;
+    -webkit-text-stroke-color: transparent;
+    -webkit-text-stroke-width: 0;
+    letter-spacing: normal;
   }
 
-  .welcome_text h1 span.qualification {
-    color: #9ba4b5;
-    font-size: 1.5rem;
+  img.hi {
+    width: 30px;
+    height: auto;
+    /* margin-left: 5px; */
+    margin-top: 10px;
+   /* border: 1px solid #ff6000; */
   }
+
+
+
+
+  .welcome_text h1 span.qualification, #text, #text-mobile {
+    font-size: 1.5rem !important;
+    background-clip: text;
+    background-image: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
+    color: #000119 !important;
+    font-weight: 700;
+    letter-spacing: calc(1em / 8);
+    padding: calc(calc(1em / 16) / 2);
+    -webkit-text-stroke-color: transparent;
+    -webkit-text-stroke-width: calc(1em / 16);
+  }
+
+
+
+
+
+
+
+
+
 
   /* Text Animation */
   .hidden {
@@ -465,15 +520,27 @@ body {
     width: 40%;
     height: 48px;
     margin: 13px auto 24px 30%;
-    border: 1px solid #ff6000;
-    border-radius: 4px;
+    border-radius: 10px;
     font-weight: 500;
     font-size: 1rem;
     line-height: 24px;
     text-align: center;
     padding-top: 10px;
     color: #f1f6f9;
+
+    border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+    border-image-width: 2rem;
+  
+    animation: borderRotate var(--d) linear infinite forwards;
+  
   }
+
+  @keyframes borderRotate {
+    100% {
+      --angle: 420deg;
+    }
+  }
+
 
   a.project-link:hover {
     border: 3px solid #9ba4b5;
