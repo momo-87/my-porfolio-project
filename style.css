@@ -515,7 +515,7 @@ body {
     width: 100%;
   }
 
-  a.project-link {
+  a.project-link{
     display: inline-block;
     width: 40%;
     height: 48px;
@@ -528,11 +528,15 @@ body {
     padding-top: 10px;
     color: #f1f6f9;
 
+
+  
+  }
+
+  a.project-link, .resume_button a, .getInTouch{
     border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
     border-image-width: 2rem;
   
     animation: borderRotate var(--d) linear infinite forwards;
-  
   }
 
   @keyframes borderRotate {
@@ -677,7 +681,7 @@ body {
     text-align: center;
     padding-top: 10px;
     color: #f1f6f9;
-    border: 1px solid #ff6000;
+    /* border: 1px solid #ff6000; */
   }
 
   .about_me_text .resume_button a:hover {
@@ -815,7 +819,7 @@ body {
     line-height: 24px;
     text-align: center;
     color: #f1f6f9;
-    border: 1px solid #ff6000;
+    /* border: 1px solid #ff6000; */
   }
 
   .about_bottom ul li button:hover {
