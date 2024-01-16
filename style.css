@@ -67,6 +67,7 @@ body {
   }
 
   header {
+    background-color: #000000;
     position: fixed;
     width: 100%;
     height: 48px;
@@ -82,6 +83,10 @@ body {
 
   .logo-container img {
     width: 90%;
+  }
+
+  .title {
+    display: none;
   }
 
   nav {
@@ -149,6 +154,8 @@ body {
 
   /* Mobile Version Headline section start */
   .headline {
+    background-image: url('./assets/bg4.jpg');
+    background-size: cover;
     align-items: center;
     text-align: center;
     color: #f1f6f9;
@@ -186,7 +193,7 @@ body {
 
   .welcome_text h1 span.hi {
     color: #ffffff;
-    font-size: 1.2rem !important;
+    font-size: 2rem !important;
     background-clip: none;
     background-image: none;
     -webkit-text-stroke-color: transparent;
@@ -199,6 +206,7 @@ body {
     background-clip: text;
     background-image: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
     color: #000119 !important;
+    font-size: 1.2rem;
     font-weight: 700;
     padding: calc(calc(1em / 16) / 2);
     -webkit-text-stroke-color: transparent;
@@ -865,21 +873,34 @@ body {
   }
 
   header {
-    height: 72px;
+    height: 70px;
     margin-top: 0;
-    background: none;
+    justify-content: space-between;
   }
 
   .logo-container {
     width: 3.5%;
     height: 50px;
     margin-top: 16px;
-    margin-left: 10%;
+    margin-left: 6%;
     border-radius: 50%;
   }
 
   .logo-container img {
-    width: 130%;
+    width: 100%;
+    border-radius: 50%;
+    margin-top: -5px;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 25%;
+    margin-left: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
   }
 
   nav {
@@ -895,6 +916,7 @@ body {
     margin-top: 16px !important;
     padding-top: 5px;
     margin-left: 30%;
+    margin-left: 70%;
   }
 
   .navMenu li a {
@@ -919,15 +941,12 @@ body {
   /* Desktop version Headline section start */
 
   .headline {
-    background-image: url('./assets/bg4.jpg');
-    background-size: cover;
-    /* width: 67%; */
     margin: 0 auto 90px auto;
     row-gap: 24px;
     position: relative;
     width: 100%;
     height: 100vh;
-    /* margin-top: 70px; */
+    margin-top: 70px;
   }
 
   .welcome_text {
