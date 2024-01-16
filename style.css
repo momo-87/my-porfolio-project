@@ -48,10 +48,9 @@ label {
 }
 
 body {
-  max-width: 1440px;
   margin: 0 auto 0 auto;
-  background: url('./assets/background.gif');
-  background-attachment: fixed;
+  /* background: url('./assets/background.gif'); */
+  /* background-attachment: fixed; */
 }
 
 /* Mobile version start */
@@ -920,22 +919,20 @@ body {
   /* Desktop version Headline section start */
 
   .headline {
-    background-image: none;
+    background-image: url('./assets/bg4.jpg');
+    background-size: cover;
     /* width: 67%; */
     margin: 0 auto 90px auto;
     row-gap: 24px;
-
-
-    
-    border: 2px solid #ff6000;
     position: relative;
     width: 100%;
+    height: 100vh;
+    /* margin-top: 70px; */
   }
 
   .welcome_text {
     /* height: auto; */
     margin-top: 150px;
-    border: 1px solid #ff6000;
     text-align: left;
   }
 
@@ -945,9 +942,10 @@ body {
 
   .welcome_text .desktop_version {
     display: inline-block;
-    line-height: 80px;
+    line-height: 60px;
     font-weight: 800;
     font-size: 80px;
+    padding-top: 20px;
   }
 
   .welcome_text h1 span.hi {
