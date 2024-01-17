@@ -233,14 +233,14 @@ body {
   }
 
   .social_media_icons,
-  .desktop_social_media_icons {
+  .footer_social_media_icons {
     justify-content: center;
     width: 100%;
     margin-top: 22.89px;
   }
 
   .social_media_icons ul,
-  .desktop_social_media_icons ul {
+  .footer_social_media_icons ul {
     justify-content: space-around;
     gap: 15%;
   }
@@ -249,7 +249,7 @@ body {
     color: #f1f6f9;
   }
 
-  .desktop_social_media_icons {
+  .footer_social_media_icons {
     display: none;
   }
 
@@ -317,19 +317,19 @@ body {
 
   ul.bubble-list li:nth-child(3) {
     animation: float 8s ease-in-out infinite;
-  }
+  } */
 
   @keyframes float {
     0% {
-      transform: translatey(0px);
+      transform: translatex(0px);
     }
     50% {
-      transform: translatey(-40px);
+      transform: translatex(-40px);
     }
     100% {
-      transform: translatey(0px);
+      transform: translatex(0px);
     }
-  } */
+  }
 
   .action {
     height: 48px;
@@ -934,6 +934,7 @@ body {
     width: 100%;
     height: 100vh;
     margin-top: 68px;
+    position: relative;
   }
 
   .welcome_text {
@@ -986,9 +987,17 @@ body {
     font-size: 1.2rem;
   }
 
-  .social_media_icons,
-  .desktop_social_media_icons {
-    width: 21.74%;
+  .social_media_icons {
+    position: fixed;
+    top: 100px;
+    right: 10px;
+    height: 500px;
+    width: 60px;
+  }
+
+  .social_media_icons ul {
+    flex-direction: column;
+    gap: 0;
   }
 
   .ball {
@@ -1002,29 +1011,28 @@ body {
   }
 
   ul.bubble-list li:nth-child(1) {
-    top: 200px;
-    left: 10%;
+    animation: float 5s ease-in-out infinite;
   }
 
   ul.bubble-list li:nth-child(6) {
-    top: 150px;
-    left: 75%;
+    animation: float 6s ease-in-out infinite;
   }
 
   ul.bubble-list li:nth-child(5) {
-    top: 350px;
-    left: 85%;
+    animation: float 7s ease-in-out infinite;
   }
 
   ul.bubble-list li:nth-child(4) {
-    top: 500px;
-    left: 80%;
+    animation: float 8s ease-in-out infinite;
   }
 
   ul.bubble-list li:nth-child(2) {
     animation: float 9s ease-in-out infinite;
   }
 
+  ul.bubble-list li:nth-child(3) {
+    animation: float 10s ease-in-out infinite;
+  }
   .action {
     height: 40px;
     margin-top: 35px;
@@ -1202,14 +1210,14 @@ body {
     display: none;
   }
 
-  .desktop_social_media_icons {
+  .footer_social_media_icons {
     display: flex;
     justify-content: center;
     width: 100%;
     margin-bottom: 10px;
   }
 
-  .desktop_social_media_icons ul {
+  .footer_social_media_icons ul {
     gap: 20px;
   }
 }
