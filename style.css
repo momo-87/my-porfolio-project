@@ -164,12 +164,6 @@ body {
     margin-top: 44px;
   }
 
-  /* .welcome_text,
-  .introduction_text,
-  .action {
-    width: 87.2%;
-  } */
-
   .welcome_text .desktop_version {
     display: none;
   }
@@ -655,7 +649,6 @@ body {
     text-align: center;
     padding-top: 10px;
     color: #f1f6f9;
-    /* border: 1px solid #ff6000; */
   }
 
   .about_me_text .resume_button a:hover {
@@ -944,8 +937,9 @@ body {
   }
 
   .welcome_text {
-    margin-top: 100px;
+    margin-top: 70px;
     text-align: left;
+    width: 100%;
   }
 
   .welcome_text .mobile_version {
@@ -958,6 +952,8 @@ body {
     font-weight: 800;
     font-size: 80px;
     padding-top: 20px;
+    text-wrap: nowrap;
+    padding-left: 12.5%;
   }
 
   .welcome_text h1 span.hi {
