@@ -75,7 +75,7 @@ body {
   }
 
   .logo-container {
-    width: 26.7%;
+    width: 75px;
     height: 70px;
     display: flex;
     align-items: center;
@@ -83,7 +83,7 @@ body {
   }
 
   .logo-container img {
-    width: 70%;
+    width: 100%;
     padding-top: 15px;
   }
 
@@ -164,11 +164,11 @@ body {
     margin-top: 44px;
   }
 
-  .welcome_text,
+  /* .welcome_text,
   .introduction_text,
   .action {
     width: 87.2%;
-  }
+  } */
 
   .welcome_text .desktop_version {
     display: none;
@@ -189,8 +189,6 @@ body {
     padding: calc(calc(1em / 16) / 2);
     -webkit-text-stroke-color: transparent;
     -webkit-text-stroke-width: calc(1em / 16);
-
-
   }
 
   .welcome_text h1 span.hi {
@@ -875,22 +873,12 @@ body {
   }
 
   header {
-    height: 70px;
-    margin-top: 0;
     justify-content: space-between;
-  }
-
-  .logo-container {
-    width: 3.5%;
-    height: 50px;
-    margin-top: 16px;
-    margin-left: 6%;
-    border-radius: 50%;
+    padding: 10px 100px 0 25px;
   }
 
   .logo-container img {
     width: 100%;
-    border-radius: 50%;
     margin-top: -5px;
   }
 
@@ -903,6 +891,7 @@ body {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    text-wrap: nowrap;
   }
 
   nav {
@@ -951,11 +940,10 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
-    margin-top: 70px;
+    margin-top: 68px;
   }
 
   .welcome_text {
-    /* height: auto; */
     margin-top: 100px;
     text-align: left;
   }
