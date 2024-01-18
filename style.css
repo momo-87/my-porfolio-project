@@ -196,7 +196,6 @@ body {
   }
 
   .welcome_text h1 span.qualification, #text, #text-mobile {
-    /* font-size: 1.5rem !important; */
     background-clip: text;
     background-image: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
     color: #000119 !important;
@@ -242,7 +241,7 @@ body {
   .social_media_icons ul,
   .footer_social_media_icons ul {
     justify-content: space-around;
-    gap: 15%;
+    gap: 3%;
   }
 
   i.fa-brands {
@@ -253,18 +252,34 @@ body {
     display: none;
   }
 
-  .ball {
+  .circle {
     border-radius: 50%;
-    height: 45px;
-    width: 45px;
-    background-color: rgba(155, 164, 181, 0.2);
+    background: linear-gradient(to right, #f12711, #f5af19);
+    padding: 3px;
+    animation: rotate 10s linear infinite;
   }
 
-  .ball:hover {
-    background-color: rgba(155, 164, 181, 0);
-    height: 55px;
-    width: 55px;
-    border: 1px solid white;
+  .ball {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: #000000;
+  }
+
+  @keyframes rotate {
+    0%{
+      transform:rotate(0deg);
+    }
+    50%{
+      trasnform:rotate(180deg);
+    }
+    100%{
+      transform:rotate(360deg);
+    }
+  }
+
+  .circle:hover {
+    background: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
   }
 
   .ball a {
@@ -280,54 +295,39 @@ body {
     font-size: 1.5em;
   }
 
-  /* ul.bubble-list li:nth-child(1) {
+  ul.bubble-list li:nth-child(1) {
     animation: float 5s ease-in-out infinite;
-    position: absolute;
-    top: 120px;
-    left: 5%;
   }
 
   ul.bubble-list li:nth-child(6) {
     animation: float 6s ease-in-out infinite;
-    position: absolute;
-    top: 150px;
-    left: 85%;
   }
 
   ul.bubble-list li:nth-child(5) {
     animation: float 7s ease-in-out infinite;
-    position: absolute;
-    top: 380px;
-    left: 80%;
   }
 
   ul.bubble-list li:nth-child(4) {
     animation: float 8s ease-in-out infinite;
-    position: absolute;
-    top: 450px;
-    left: 65%;
   }
 
   ul.bubble-list li:nth-child(2) {
     animation: float 9s ease-in-out infinite;
-    position: absolute;
-    top: 400px;
-    left: 15%;
   }
 
   ul.bubble-list li:nth-child(3) {
     animation: float 8s ease-in-out infinite;
-  } */
+  }
 
   @keyframes float {
     0% {
-      transform: translatex(0px);
+      transform: translatey(0px);
     }
     50% {
-      transform: translatex(-40px);
+      transform: translatey(-40px);
     }
     100% {
-      transform: translatex(0px);
+      transform: translatey(0px);
     }
   }
 
@@ -1005,10 +1005,10 @@ body {
     width: 60px;
   }
 
-  .ball:hover {
+  /* .ball:hover {
     height: 75px;
     width: 75px;
-  }
+  } */
 
   ul.bubble-list li:nth-child(1) {
     animation: float 5s ease-in-out infinite;
@@ -1033,6 +1033,19 @@ body {
   ul.bubble-list li:nth-child(3) {
     animation: float 10s ease-in-out infinite;
   }
+
+  @keyframes float {
+    0% {
+      transform: translatex(0px);
+    }
+    50% {
+      transform: translatex(-40px);
+    }
+    100% {
+      transform: translatex(0px);
+    }
+  }
+
   .action {
     height: 40px;
     margin-top: 35px;
