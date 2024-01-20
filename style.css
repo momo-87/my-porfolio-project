@@ -162,7 +162,52 @@ body {
     text-align: center;
     color: aliceblue;
     margin-top: 44px;
+    position: relative;
   }
+
+
+  .vertical-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+    top: 0;
+  }
+
+  .verticalBarCircle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ff6000;
+  }
+
+  .verticalBarLine {
+    width: 4px;
+    height: 160px;
+    background-color: #ff6000;
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   .welcome_text .desktop_version {
     display: none;
@@ -936,6 +981,33 @@ body {
     margin-top: 68px;
     position: relative;
   }
+
+  .vertical-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .verstical-bar-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ff6000;
+  }
+
+  .verstical-bar-line {
+    width: 4px;
+    
+  }
+
+
+
+
+
+
+
+
 
   .welcome_text {
     margin-top: 70px;
