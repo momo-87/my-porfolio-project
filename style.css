@@ -171,7 +171,7 @@ body {
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 20px;
+    left: 5%;
     top: 20px;
   }
 
@@ -520,9 +520,6 @@ body {
     text-align: center;
     padding-top: 10px;
     color: #f1f6f9;
-
-
-  
   }
 
   a.project-link, .resume_button a, .getInTouch{
@@ -963,7 +960,7 @@ body {
   }
 
   .vertical-bar {
-    left: 150px;
+    left: 10%;
     top: 80px;
   }
 
