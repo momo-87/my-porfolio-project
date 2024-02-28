@@ -156,7 +156,6 @@ body {
 
   /* Mobile Version Headline section start */
   .headline {
-    /* background-image: url('./assets/bg4.jpg'); */
     background:linear-gradient(to bottom, rgba(0,0,0,0) 80%, rgba(0,0,0,1)), url('./assets/bg4.jpg');
     background-size: cover;
     align-items: center;
@@ -385,10 +384,6 @@ body {
   .recent_works {
     display: grid;
     grid-template-columns: auto;
-    /* background-color: #000000; */
-    /* background: url('./assets/bg44.jpg'); */
-    /* background: rgb(2,0,36); */
-    /* background: linear-gradient(180deg,rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%); */
   }
 
   .primary-text,
@@ -1078,16 +1073,13 @@ body {
 
   .action {
     height: 40px;
-    margin-top: 35px;
-    margin-bottom: 30px;
+    margin-top: 300px;
   }
 
   /* Desktop version headline section end */
 
   /* Desktop version Recent works section start */
   .recent_works {
-    /* width: 81.32%; */
-    /* margin: 30px 9.3% 0 9.3%; */
     padding: 0 9.3% 0 9.3%;
   }
 
