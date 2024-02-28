@@ -97,7 +97,7 @@ body {
 
   .navMenu {
     margin-left: -1000px;
-    transition: 0.3s;
+    transition: 0.2s;
   }
 
   #navMenu.mobileMenu {

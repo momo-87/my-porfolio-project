@@ -1,15 +1,18 @@
 const openMobileMenu = document.querySelector('#openMobileMenu');
 const menuList = document.querySelector('#navMenu');
 const closeMobileMenu = document.querySelector('#closeMobileMenu');
+const headline = document.querySelector('#headLine');
 
 openMobileMenu.addEventListener('click', () => {
   menuList.classList.add('mobileMenu');
   closeMobileMenu.classList.add('closeMobileMenu');
+  headline.style.display = 'none';
 });
 
 closeMobileMenu.addEventListener('click', () => {
   menuList.classList.remove('mobileMenu');
   closeMobileMenu.classList.remove('closeMobileMenu');
+  headline.style.display = 'block';
 });
 
 const navMenuLink = document.querySelectorAll('.navMenuLink');
