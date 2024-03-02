@@ -184,7 +184,7 @@ body {
 
   .verticalBarLine {
     width: 4px;
-    height: 160px;
+    height: 140px;
     background: linear-gradient(to bottom, #002168, #000000);
     
   }
@@ -254,6 +254,11 @@ body {
     text-align: justify;
     margin-top: 30px;
     color: #f1f6f9;
+    padding: 0 5px 0 5px;
+  }
+
+  .introduction_text .desktop {
+    display: none;
   }
 
   .social_media_icons,
@@ -949,7 +954,6 @@ body {
   /* Desktop version Headline section start */
 
   .headline {
-    /* margin: 0 auto 90px auto; */
     row-gap: 24px;
     position: relative;
     width: 100%;
@@ -1013,9 +1017,20 @@ body {
     width: 100%;
     line-height: 32px;
     margin-left: 0;
-    text-align: center;
+    text-align: left;
     font-size: 1.2rem;
+    padding-left: 12.5%;
+    /* border: 1px solid white; */
   }
+
+  .introduction_text .mobile {
+    display: none;
+  }
+
+  .introduction_text .desktop {
+    display: inline-block;
+  }
+
 
   .social_media_icons {
     position: fixed;
@@ -1073,7 +1088,7 @@ body {
 
   .action {
     height: 40px;
-    margin-top: 300px;
+    margin-top: 230px;
   }
 
   /* Desktop version headline section end */
@@ -1093,7 +1108,8 @@ body {
   }
 
   .indicator {
-    display: none;
+    width: 80px;
+    height: 4px;
   }
 
   .card_works {
