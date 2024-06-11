@@ -41,7 +41,7 @@ const projects = [
       { name: 'Capybara', url: 'https://teamcapybara.github.io/capybara/' },
       { name: 'GitHub', url: 'https://github.com/' },
     ],
-    liveVersion: 'https://doctors.abeltb.xyz/',
+    liveVersion: 'https://doctor-appointment-3o4a.onrender.com/',
     codeSource: 'https://github.com/abel-tefera/doctor-appointment-front-end',
   },
   {
